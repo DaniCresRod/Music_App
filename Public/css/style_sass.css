@@ -11862,4 +11862,12 @@ nav {
   background: grey;
 }
 
+main {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 /*# sourceMappingURL=style_sass.css.map */
