@@ -1,0 +1,9 @@
+/*p{
+    font-size: larger;
+    font-weight: bolder;
+}*/
+
+main section article p:first-Child{
+    font-size: larger;
+    font-weight: bolder;
+}
