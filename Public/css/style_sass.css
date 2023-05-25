@@ -2,5 +2,13 @@
   margin: 0;
   padding: 0;
 }
+* html body main .interactive-area .pad button {
+  background-color: #131313;
+  color: #131313;
+  border-radius: 50%;
+  box-sizing: border-box;
+  font-weight: bold;
+  border: 2px solid #26242C;
+}
 
 /*# sourceMappingURL=style_sass.css.map */
