@@ -11869,5 +11869,8 @@ main {
   align-items: center;
   justify-content: center;
 }
+main #Flute img {
+  height: 50vh;
+}
 
 /*# sourceMappingURL=style_sass.css.map */
