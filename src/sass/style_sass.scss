@@ -3,7 +3,7 @@
 
 // Include any default variable overrides here (though functions won't be available)
 
-@import "../../node_modules/bootstrap/scss/bootstrap";
+//@import "../../node_modules/bootstrap/scss/bootstrap";
 
 // Then add additional custom code here
 
@@ -12,15 +12,21 @@ $base-nav-color: grey;
 
 *{
     margin:0;
-    padding:0;    
+    padding:0;   
+    background: transparent; 
 }
 
 nav{
     position: fixed;
     top:0;
     width: 100vw;
+    height: 15vh;
 
-    background: $base-nav-color;      
+    background: $base-nav-color;  
+    
+    img{
+        height: 10vh;
+    }
 }
 
 main{
@@ -30,13 +36,37 @@ main{
     align-items: center;
     justify-content: center;
 
-    
-    #Flute{
-        img{
-            height: 50vh;            
-        }
-        
-        
+    .interactive_area{
+        position:relative;
+        top: 20vh;
+        margin: 0 auto;
+
+        //border: 1px solid green;
+/*
+        #Flute{
+            position:relative;
+            border: 1px solid black;
+            img{
+                position: absolute;
+                height: 50vh;  
+                border: 1px solid blue;          
+            }
+
+            map{
+                position:relative;
+                z-index: 2;
+                
+                area{
+                    border: 1px solid red;
+                }
+
+            }
+
+           
+            
+        }*/
+
     }
+    
 }
 
