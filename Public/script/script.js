@@ -1,13 +1,18 @@
-function flute_note(theNote){
+document.querySelectorAll("#Flute a").forEach( (x,index)=>{ 
+    
+    x.addEventListener("click", function(evento) {
+        evento.preventDefault();
+        let target=document.querySelectorAll("audio")[index];
+        target.playbackRate=2;
+        target.play();
 
-    document.querySelectorAll("audio")[4].play();
+        if(target.currentTime>0){
+            target.pause();
+            target.currentTime=0;
+            target.play();
+        }
+    });
+});
 
-}
 
-console.log(document.querySelectorAll("audio"));
 
-document.querySelectorAll("#Flute a").forEach(x => {
-    x.addEventListener("click", flute_note(1));}
-);
-
-console.log(document.querySelectorAll("#Flute a"));
