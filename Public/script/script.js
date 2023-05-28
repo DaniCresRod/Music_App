@@ -1,8 +1,13 @@
-/*let persona={
-    numero:["hola", "que", "tal"]
+function flute_note(theNote){
+
+    document.querySelectorAll("audio")[4].play();
+
 }
 
-console.log(persona.numero.slice(0,2));
-console.log(persona.numero);
+console.log(document.querySelectorAll("audio"));
 
-console.log(1 + null)*/
+document.querySelectorAll("#Flute a").forEach(x => {
+    x.addEventListener("click", flute_note(1));}
+);
+
+console.log(document.querySelectorAll("#Flute a"));

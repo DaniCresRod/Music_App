@@ -1,7 +1,6 @@
 * {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  background: transparent;
 }
 
 nav {
@@ -26,29 +25,22 @@ main .interactive_area {
   position: relative;
   top: 20vh;
   margin: 0 auto;
-  /*
-          #Flute{
-              position:relative;
-              border: 1px solid black;
-              img{
-                  position: absolute;
-                  height: 50vh;  
-                  border: 1px solid blue;          
-              }
-
-              map{
-                  position:relative;
-                  z-index: 2;
-
-                  area{
-                      border: 1px solid red;
-                  }
-
-              }
-
-
-
-          }*/
+}
+main .interactive_area #Flute {
+  border: 1px solid black;
+  height: auto;
+  width: 80vw;
+  margin: 0 auto;
+  text-align: center;
+}
+main .interactive_area #Flute #flute_photo {
+  max-width: 70vh;
+}
+main .interactive_area #Flute #flute_photo circle {
+  fill: rgb(231, 139, 33);
+  opacity: 0.5;
+  r: 30;
+  cx: 495;
 }
 
 /*# sourceMappingURL=style_sass.css.map */

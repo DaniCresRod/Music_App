@@ -11,9 +11,8 @@
 $base-nav-color: grey;
 
 *{
-    margin:0;
-    padding:0;   
-    background: transparent; 
+    margin:0 auto;
+    padding:0;
 }
 
 nav{
@@ -41,32 +40,26 @@ main{
         top: 20vh;
         margin: 0 auto;
 
-        //border: 1px solid green;
-/*
-        #Flute{
-            position:relative;
+        #Flute{            
             border: 1px solid black;
-            img{
-                position: absolute;
-                height: 50vh;  
-                border: 1px solid blue;          
-            }
 
-            map{
-                position:relative;
-                z-index: 2;
-                
-                area{
-                    border: 1px solid red;
-                }
-
-            }
-
-           
+            height: auto;
+            width: 80vw;
             
-        }*/
+            margin:0 auto; 
+            text-align: center; 
+            
+            #flute_photo{
+                max-width: 70vh;
 
-    }
-    
+                circle{
+                    fill:rgb(231, 139, 33);
+                    opacity: 0.5;
+                    r: 30;
+                    cx:495;
+                }
+            }            
+        }
+    }    
 }
 
