@@ -2,84 +2,8 @@
   margin: 0;
   padding: 0;
 }
-* .container-pads .pad {
-  color: #131313;
-  font-weight: bold;
-  border-radius: 50%;
-  border: 4px solid #26242c;
-  background-color: #131313;
-  box-sizing: border-box;
-}
-* .container-pads .top-pads {
-  display: flex;
-  border: 1px solid red;
-  justify-content: space-evenly;
-}
-* .container-pads .top-pads .top-pads__left,
-* .container-pads .top-pads .top-pads__right {
-  width: 100px;
-  height: 100px;
-  justify-content: center;
-  align-items: center;
-}
-* .container-pads .top-pads .top-pads__left:hover,
-* .container-pads .top-pads .top-pads__right:hover {
-  color: #26242c;
-  box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.58);
-}
-* .container-pads .side-pads {
-  display: flex;
-  justify-content: space-evenly;
-  border: 1px solid blue;
-}
-* .container-pads .side-pads .side-pads__right,
-* .container-pads .side-pads .side-pads__left {
-  width: 100px;
-  height: 100px;
-  justify-content: center;
-  align-items: center;
-}
-* .container-pads .side-pads .side-pads__left:hover,
-* .container-pads .side-pads .side-pads__right:hover {
-  color: #26242c;
-  box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.58);
-}
-* .container-pads .middle-pads {
-  display: flex;
-  border: 1px solid green;
-  justify-content: center;
-}
-* .container-pads .middle-pads .middle-pads__left,
-* .container-pads .middle-pads .middle-pads__right {
-  width: 120px;
-  height: 120px;
-  justify-content: center;
-  align-items: center;
-}
-* .container-pads .middle-pads .middle-pads__left:hover,
-* .container-pads .middle-pads .middle-pads__right:hover {
-  color: #26242c;
-  box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.58);
-}
-* .container-pads .bottom-pads {
-  display: flex;
-  justify-content: space-evenly;
-  border: 1px solid grey;
-}
-* .container-pads .bottom-pads .bottom-pads__left,
-* .container-pads .bottom-pads .bottom-pads__right {
-  width: 120px;
-  height: 120px;
-  justify-content: center;
-  align-items: center;
-}
-* .container-pads .bottom-pads .bottom-pads__left:hover,
-* .container-pads .bottom-pads .bottom-pads__right:hover {
-  color: #26242c;
-  box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.58);
-}
-* .container-pads .container-pads {
-  position: absolute;
+* main .interactive-area #drums #drums-photo circle {
+  fill: aqua;
 }
 
 /*# sourceMappingURL=style_sass.css.map */
