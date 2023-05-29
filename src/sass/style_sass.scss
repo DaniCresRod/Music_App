@@ -3,89 +3,149 @@
 
 // Include any default variable overrides here (though functions won't be available)
 
-//@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap/scss/bootstrap";
 
 // Then add additional custom code here
 
+//Fuentes
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Roboto&display=swap');
+
+
 //Colores
 $base-nav-color: grey;
+$base-body-color: #225b63;
+$font-color: #119aab;
 
 *{
     margin:0 auto;
     padding:0;
-}
-
-nav{
-    position: fixed;
-    top:0;
-    width: 100vw;
-    height: 15vh;
-
-    background: $base-nav-color;  
     
-    img{
-        height: 10vh;
-    }
 }
 
-main{
-    margin:0 auto;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+body{
+    background: $base-body-color;
 
-    .interactive_area{
-        position:relative;
-        top: 20vh;
-        margin: 0 auto;
+    nav{
+        position: fixed;
+        top:0;
+        width: 100vw;
+        height: 8vh;
+        margin-bottom: 3vh;
+        
+    
+        background-color: $base-body-color;
+        //background: $base-nav-color;  
 
-        #Flute{            
-            border: 1px solid black;
-
-            height: auto;
-            width: 80vw;
-            
-            margin:0 auto; 
-            text-align: center; 
-            
-            #flute_photo{
-                max-height: 70vh;
-
-                circle{
-                    fill:rgb(231, 139, 33);
-                    opacity: 0.5;
-                    r: 30;
-                    cx:495;
-                }
-
-                circle:hover{
-                    opacity: 1;
-                }
-            }            
+        .custom_button{
+            border: 0;
         }
-    }    
-}
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: right;
-    background-color:#0A1E21;
-    //padding: 5em;
-    margin: 2em 20em;
-}*/
+    
+        button{            
+            margin:0 auto;
+            
+            
+            
 
-button{
-    color: rgb(83, 224, 83);
+            .custom_icon{
+                background-image: url(../../Public/Images/Boton_menu.svg);
+                background-position: center;
+                background-size: cover;
+            }
+            
+        }
+    
+        ul{
+            li{
+                display: flex;
+                float: right;
+                
+            }
+        } 
+        
+        img{
+            height: 8vh;
+            padding: 1.5vh 1.5vw;
+        }
+
+        :link{
+            color: $font-color;            
+        }
+
+        :visited{
+            color: $font-color;
+        }
+    }
+    
+    main{
+        margin:0 auto;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+        #interactive_area{               
+            margin: 0 auto;
+    
+            #Flute{
+    
+                height: auto;
+                width: 80vw;
+                
+                margin:0 auto; 
+                text-align: center; 
+                
+                #flute_photo{
+                    max-height: 70vh;
+    
+                    circle{
+                        fill:rgb(231, 139, 33);
+                        opacity: 0.5;
+                        r: 30;
+                        cx:495;
+                    }
+    
+                    circle:hover{
+                        opacity: 1;
+                    }
+                }            
+            }
+        }
+        
+        #main_message{
+            margin-top: 2vh;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            width: 80vw;
+
+            h1{                
+                font-size: 2.5rem;
+            }
+            h6{
+                font-size: 0.8rem;
+                color:$font-color;
+            }
+        }
+
+        #get_premium{
+            margin: 1vh auto;
+
+            h5{
+                color: white;
+                background: #00De7A;
+                padding: 0.5vh 6vw;
+                border-radius: 20px;
+                text-transform: capitalize;
+                font-size: 1rem;
+            }
+        }
+    }
+    
+    footer{
+        max-height: 15vh;
+    }
+
 }
 
-nav ul li{
-    display: flex;
-    float: right;
-}
 
-a {
-    color: antiquewhite;
-    font-weight: bold;
-}
+
