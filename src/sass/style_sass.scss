@@ -3,3 +3,26 @@
     padding:0;
     
 }
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+    background-color:antiquewhite;
+    padding: 0.5em;
+    margin: 2em 20em;
+}
+
+button{
+    color: rgb(83, 224, 83) ;
+}
+
+nav ul li{
+    display: flex;
+    float: right;
+}
+
+a {
+    color: antiquewhite;
+    font-weight: bold;
+}
