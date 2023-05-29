@@ -34,13 +34,16 @@ main .interactive_area #Flute {
   text-align: center;
 }
 main .interactive_area #Flute #flute_photo {
-  max-width: 70vh;
+  max-height: 70vh;
 }
 main .interactive_area #Flute #flute_photo circle {
   fill: rgb(231, 139, 33);
   opacity: 0.5;
   r: 30;
   cx: 495;
+}
+main .interactive_area #Flute #flute_photo circle:hover {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style_sass.css.map */
