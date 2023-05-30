@@ -4,6 +4,7 @@ document.querySelectorAll("#Flute a").forEach( (x,index)=>{
         evento.preventDefault();
         let target=document.querySelectorAll("audio")[index];
         target.playbackRate=2;
+        target.volume=0.2;
         target.play();
 
         if(target.currentTime>0){
