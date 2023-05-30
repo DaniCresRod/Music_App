@@ -3,7 +3,8 @@
   padding: 0;
 }
 * main .interactive-area #drums #drums-photo circle {
-  fill: aqua;
+  fill: grey;
+  opacity: 0.7;
 }
 
 /*# sourceMappingURL=style_sass.css.map */
