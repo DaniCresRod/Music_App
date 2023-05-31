@@ -11918,7 +11918,7 @@ body main #interactive_area #Flute #flute_photo circle {
   cx: 495;
 }
 body main #interactive_area #Flute #flute_photo circle:hover {
-  opacity: 1;
+  fill: white;
 }
 body main #main_message {
   margin-top: 2vh;

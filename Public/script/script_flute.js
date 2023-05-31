@@ -25,5 +25,41 @@ document.querySelectorAll("#Flute a").forEach( (x,index)=>{
     });
 });
 
+document.addEventListener("keydown", function (event) {
+    let keyCode = event.keyCode || event.which;
+
+    switch (keyCode) {      
+      case 83: // Tecla 'S'
+        playSound(scaleArray[0]);
+        break;
+      case 68: // Tecla 'D' 
+        playSound(scaleArray[1]);
+        break;
+      case 70: // Tecla 'F' 
+        playSound(scaleArray[2]);
+        break;
+        case 192: //Tecla 'Ñ'
+        playSound(scaleArray[6]);
+        break;
+        case 76: //Tecla 'L'
+        playSound(scaleArray[5]);
+        break;
+        case 75: //Tecla 'K'
+        playSound(scaleArray[4]);
+        break;
+        case 74: //Tecla 'J'
+        playSound(scaleArray[3]);
+        break;
+    }
+  });
+
+  function playSound(sound) {
+    sound.playbackRate=2;
+    sound.volume=0.2;
+    sound.currentTime = 0;
+    sound.play();
+  }
+
+
 
 
