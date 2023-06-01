@@ -12,6 +12,9 @@ document.querySelectorAll("#Flute a").forEach( (x,index)=>{
     
     x.addEventListener("click", function(event) {
         event.preventDefault();
+        
+        NoteChange();
+        
         let target=scaleArray[index];
         target.playbackRate=2;
         target.volume=0.2;
@@ -26,31 +29,53 @@ document.querySelectorAll("#Flute a").forEach( (x,index)=>{
 });
 
 document.addEventListener("keydown", function (event) {
-    let keyCode = event.keyCode || event.which;
+  let keyCode = event.keyCode || event.which;
 
-    switch (keyCode) {      
-      case 83: // Tecla 'S'
-        playSound(scaleArray[0]);
-        break;
-      case 68: // Tecla 'D' 
-        playSound(scaleArray[1]);
-        break;
-      case 70: // Tecla 'F' 
-        playSound(scaleArray[2]);
-        break;
-        case 192: //Tecla 'Ñ'
-        playSound(scaleArray[6]);
-        break;
-        case 76: //Tecla 'L'
-        playSound(scaleArray[5]);
-        break;
-        case 75: //Tecla 'K'
-        playSound(scaleArray[4]);
-        break;
-        case 74: //Tecla 'J'
-        playSound(scaleArray[3]);
-        break;
+  let mySound=null;
+  let myText=null;
+  KeyChange();
+
+  switch (keyCode) {      
+    case 83: // Tecla 'S'
+      mySound=scaleArray[0];
+      myText=0;      
+      break;
+    case 68: // Tecla 'D'
+      mySound=scaleArray[1]; 
+      myText=1;      
+      break;
+    case 70: // Tecla 'F' 
+      mySound=scaleArray[2];
+      myText=2;
+      break;
+    case 74: //Tecla 'J'
+      mySound=scaleArray[3];
+      myText=3;
+      break;
+    case 75: //Tecla 'K'
+      mySound=scaleArray[4];
+      myText=4;
+      break;
+    case 76: //Tecla 'L'
+      mySound=scaleArray[5];
+      myText=5;
+      break;
+    case 192: //Tecla 'Ñ'
+      mySound=scaleArray[6];
+      myText=6;
+      break;
+    default:
+      break;   
     }
+    if(mySound!=null){
+      document.querySelector("#flute_photo a:nth-of-type("+(myText+1)+") text").setAttribute("fill", "black");
+      playSound(mySound);
+
+      mySound.addEventListener("ended", function(){
+        document.querySelector("#flute_photo a:nth-of-type("+(myText+1)+") text").setAttribute("fill", "white");
+      });
+    }    
+
   });
 
   function playSound(sound) {
@@ -60,6 +85,23 @@ document.addEventListener("keydown", function (event) {
     sound.play();
   }
 
+  let arrayKbKeys=["S", "D","F","J","K","L","Ñ"];
+  let arrayNotes=["SI","LA","SOL","FA","MI","RE","DO"];
+  let arrayXPosText=[477, 475, 466, 475, 475, 475, 470];
 
+  function KeyChange(){
+    for(var i=0; i<arrayKbKeys.length; i++){
+      document.querySelector("#flute_photo a:nth-of-type("+(i+1)+") text").innerHTML=arrayKbKeys[i];
+      document.querySelector("#flute_photo a:nth-of-type("+(i+1)+") text").setAttribute("x", "485");
+    }
+  }
+  
+  function NoteChange(){
+    for(var i=0; i<arrayKbKeys.length; i++){
+      document.querySelector("#flute_photo a:nth-of-type("+(i+1)+") text").innerHTML=arrayNotes[i];
+      document.querySelector("#flute_photo a:nth-of-type("+(i+1)+") text").setAttribute("x", arrayXPosText[i]);
+    }
+  }
+  
 
 

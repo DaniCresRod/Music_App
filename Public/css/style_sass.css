@@ -11866,17 +11866,22 @@ body nav {
   height: 8vh;
   margin-bottom: 3vh;
   background-color: #225b63;
+  /*button{            
+      margin:0 auto;
+
+
+
+
+      .custom_icon{
+          background-image: url(../../Public/Images/Boton_menu.svg);
+          background-position: center;
+          background-size: cover;
+      }
+
+  }*/
 }
 body nav .custom_button {
   border: 0;
-}
-body nav button {
-  margin: 0 auto;
-}
-body nav button .custom_icon {
-  background-image: url(../../Public/Images/Boton_menu.svg);
-  background-position: center;
-  background-size: cover;
 }
 body nav ul li {
   display: flex;
