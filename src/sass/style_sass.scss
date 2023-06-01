@@ -3,7 +3,7 @@
 
 // Include any default variable overrides here (though functions won't be available)
 
-@import "../../node_modules/bootstrap/scss/bootstrap";
+//@import "../../node_modules/bootstrap/scss/bootstrap";
 
 // Then add additional custom code here
 
@@ -12,9 +12,9 @@
 
 
 //Colores
-$base-nav-color: grey;
+$base-nav-color: #225b63;
 $base-body-color: #225b63;
-$font-color: #119aab;
+$font-color: white;
 
 *{
     margin:0 auto;
@@ -25,33 +25,18 @@ $font-color: #119aab;
 body{
     background: $base-body-color;
 
+    .navbar-toggler-icon {
+        
+    }
+
     nav{
         position: fixed;
         top:0;
         width: 100vw;
         height: 8vh;
         margin-bottom: 3vh;
-        
-    
         background-color: $base-body-color;
-        //background: $base-nav-color;  
-
-        .custom_button{
-            border: 0;
-        }
-    
-        button{            
-            margin:0 auto;
-            
-            
-            
-
-            .custom_icon{
-                background-image: url(../../Public/Images/Boton_menu.svg);
-                background-position: center;
-                background-size: cover;
-            }
-            
+        //background: $base-nav-color;    
         }
     
         ul{
@@ -144,8 +129,6 @@ body{
     footer{
         max-height: 15vh;
     }
-
-}
 
 
 
