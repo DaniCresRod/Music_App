@@ -2,9 +2,14 @@
   margin: 0;
   padding: 0;
 }
+* main .interactive-area #drums #drums-photo .playing {
+  transform: scale(1.01);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
 * main .interactive-area #drums #drums-photo circle {
   fill: grey;
-  opacity: 0.7;
+  opacity: 0.4;
 }
 
 /*# sourceMappingURL=style_sass.css.map */

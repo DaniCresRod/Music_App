@@ -6,9 +6,15 @@
         .interactive-area {
             #drums {
                 #drums-photo {
+                    .playing {
+                        transform: scale(1.01);
+                        border-color: #ffc600;
+                        box-shadow: 0 0 1rem #ffc600;
+                    }
+                    
                     circle {
                         fill: grey;
-                        opacity: 0.7;
+                        opacity: 0.4;
                     }
                 }
             }
