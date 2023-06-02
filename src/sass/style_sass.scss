@@ -15,6 +15,7 @@
 $base-nav-color: grey;
 $base-body-color: #0a1e21;
 $font-color: #119aab;
+$button-colors: #00De7A;
 
 * {
     margin: 0 auto;
@@ -131,7 +132,7 @@ $font-color: #119aab;
 
                 h5 {
                     color: white;
-                    background: #00De7A;
+                    background: $button-colors;
                     padding: 0.5vh 6vw;
                     border-radius: 20px;
                     text-transform: capitalize;
