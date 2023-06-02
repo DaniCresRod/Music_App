@@ -11890,10 +11890,8 @@ textarea.form-control-lg {
 * body main #interactive_area {
   margin: 0 auto;
 }
-* body main #interactive_area #drums {
-  width: 100%;
-}
 * body main #interactive_area #drums #drums-photo {
+  width: 100%;
   height: 60vh;
 }
 * body main #interactive_area #drums #drums-photo .playing {
