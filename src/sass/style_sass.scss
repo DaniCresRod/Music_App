@@ -16,10 +16,28 @@ $base-nav-color: grey;
 $base-body-color: #225b63;
 $font-color: #119aab;
 
-*{
-    margin:0 auto;
-    padding:0;
-    
+* {
+    margin: 0 auto;
+    padding: 0;
+
+    main {
+        .interactive-area {
+            #drums {
+                #drums-photo {
+                    .playing {
+                        transform: scale(1.01);
+                        border-color: #ffc600;
+                        box-shadow: 0 0 1rem #ffc600;
+                    }
+                    
+                    circle {
+                        fill: grey;
+                        opacity: 0.4;
+                    }
+                }
+            }
+        }
+    }
 }
 
 body{
