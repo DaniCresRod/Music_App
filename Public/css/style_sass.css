@@ -11866,19 +11866,46 @@ textarea.form-control-lg {
   margin-bottom: 3vh;
   background-color: #0a1e21;
 }
+@media (max-width: 768px) {
+  * body nav .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    background: linear-gradient(#10292c, #307078);
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.6);
+    right: 0;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  * body nav .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  * body nav .navbar-nav .nav-item {
+    margin-bottom: 10px;
+  }
+}
+* body nav .navbar-toggler-icon {
+  background-color: #00De7A;
+  border-radius: 5px;
+  width: 40px;
+  height: 35px;
+}
 * body nav ul li {
   display: flex;
-  float: right;
+  justify-self: right;
 }
 * body nav img {
   height: 8vh;
   padding: 1.5vh 1.5vw;
 }
 * body nav :link {
-  color: #119aab;
+  color: white;
 }
 * body nav :visited {
-  color: #119aab;
+  color: white;
 }
 * body main {
   margin: 0 auto;

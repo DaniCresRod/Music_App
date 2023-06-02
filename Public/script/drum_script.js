@@ -29,7 +29,6 @@ document.addEventListener("keydown", function (event) {
       setTimeout(() => {
         circleTom1.classList.remove("playing");
       }, 50);
-      console.log(circleTom1);
       break;
     case 83: // Tecla 'S'
       playSound(tom2);

@@ -35,10 +35,18 @@ $font-color: #119aab;
             //background: $base-nav-color;  
 
 
+            .navbar-toggler-icon {
+                background-color: #00De7A;
+                border-radius: 5px;
+                width: 40px;
+                height: 35px;
+            }
+
             ul {
                 li {
                     display: flex;
-                    float: right;
+                    // float: flex;
+                    justify-self: right;
 
                 }
             }
@@ -49,11 +57,11 @@ $font-color: #119aab;
             }
 
             :link {
-                color: $font-color;
+                color: white;
             }
 
             :visited {
-                color: $font-color;
+                color: white;
             }
         }
 
@@ -72,7 +80,7 @@ $font-color: #119aab;
                     #drums-photo {
                         width: 100%;
                         height: 60vh;
-                        
+
                         .playing {
                             transform: scale(1.01);
                             box-shadow: 0 0 1rem #ffc600;
