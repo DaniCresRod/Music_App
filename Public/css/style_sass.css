@@ -11855,89 +11855,91 @@ textarea.form-control-lg {
   margin: 0 auto;
   padding: 0;
 }
-
-body {
-  background: #225b63;
+* body {
+  background: #0a1e21;
 }
-body nav {
+* body nav {
   position: fixed;
   top: 0;
   width: 100vw;
   height: 8vh;
   margin-bottom: 3vh;
-  background-color: #225b63;
+  background-color: #0a1e21;
 }
-body nav .custom_button {
-  border: 0;
-}
-body nav button {
-  margin: 0 auto;
-}
-body nav button .custom_icon {
-  background-image: url(../../Public/Images/Boton_menu.svg);
-  background-position: center;
-  background-size: cover;
-}
-body nav ul li {
+* body nav ul li {
   display: flex;
   float: right;
 }
-body nav img {
+* body nav img {
   height: 8vh;
   padding: 1.5vh 1.5vw;
 }
-body nav :link {
+* body nav :link {
   color: #119aab;
 }
-body nav :visited {
+* body nav :visited {
   color: #119aab;
 }
-body main {
+* body main {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-body main #interactive_area {
+* body main #interactive_area {
   margin: 0 auto;
 }
-body main #interactive_area #Flute {
+* body main #interactive_area #drums {
+  width: 100%;
+}
+* body main #interactive_area #drums #drums-photo {
+  height: 60vh;
+}
+* body main #interactive_area #drums #drums-photo .playing {
+  transform: scale(1.01);
+  box-shadow: 0 0 1rem #ffc600;
+}
+* body main #interactive_area #drums #drums-photo circle {
+  fill: grey;
+  opacity: 0.4;
+}
+* body main #interactive_area #Flute {
   height: auto;
   width: 80vw;
   margin: 0 auto;
   text-align: center;
 }
-body main #interactive_area #Flute #flute_photo {
+* body main #interactive_area #Flute #flute_photo {
   max-height: 70vh;
 }
-body main #interactive_area #Flute #flute_photo circle {
+* body main #interactive_area #Flute #flute_photo circle {
   fill: rgb(231, 139, 33);
   opacity: 0.5;
   r: 30;
   cx: 495;
 }
-body main #interactive_area #Flute #flute_photo circle:hover {
+* body main #interactive_area #Flute #flute_photo circle:hover {
   fill: white;
 }
-body main #main_message {
+* body main #main_message {
   margin-top: 2vh;
   color: white;
   font-family: "Roboto", sans-serif;
   text-align: center;
   width: 80vw;
 }
-body main #main_message h1, body main #main_message .h1 {
+* body main #main_message h1, * body main #main_message .h1 {
   font-size: 2.5rem;
 }
-body main #main_message h6, body main #main_message .h6 {
+* body main #main_message h6, * body main #main_message .h6 {
   font-size: 0.8rem;
   color: #119aab;
 }
-body main #get_premium {
+* body main #get_premium {
   margin: 1vh auto;
 }
-body main #get_premium h5, body main #get_premium .h5 {
+* body main #get_premium h5, * body main #get_premium .h5 {
   color: white;
   background: #00De7A;
   padding: 0.5vh 6vw;
@@ -11945,7 +11947,7 @@ body main #get_premium h5, body main #get_premium .h5 {
   text-transform: capitalize;
   font-size: 1rem;
 }
-body footer {
+* body footer {
   max-height: 15vh;
 }
 

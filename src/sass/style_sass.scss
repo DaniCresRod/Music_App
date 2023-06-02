@@ -12,123 +12,137 @@
 
 
 //Colores
-$base-nav-color: #225b63;
-$base-body-color: #225b63;
-$font-color: white;
+$base-nav-color: grey;
+$base-body-color: #0a1e21;
+$font-color: #119aab;
 
-*{
-    margin:0 auto;
-    padding:0;
-    
-}
+* {
+    margin: 0 auto;
+    padding: 0;
 
-body{
-    background: $base-body-color;
+    body {
+        background: $base-body-color;
 
-    .navbar-toggler-icon {
-        
-    }
-
-    nav{
-        position: fixed;
-        top:0;
-        width: 100vw;
-        height: 8vh;
-        margin-bottom: 3vh;
-        background-color: $base-body-color;
-        //background: $base-nav-color;    
-        }
-    
-        ul{
-            li{
-                display: flex;
-                float: right;
-                
-            }
-        } 
-        
-        img{
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100vw;
             height: 8vh;
-            padding: 1.5vh 1.5vw;
+            margin-bottom: 3vh;
+
+
+            background-color: $base-body-color;
+            //background: $base-nav-color;  
+
+
+            ul {
+                li {
+                    display: flex;
+                    float: right;
+
+                }
+            }
+
+            img {
+                height: 8vh;
+                padding: 1.5vh 1.5vw;
+            }
+
+            :link {
+                color: $font-color;
+            }
+
+            :visited {
+                color: $font-color;
+            }
         }
 
-        :link{
-            color: $font-color;            
-        }
-
-        :visited{
-            color: $font-color;
-        }
-    }
-    
-    main{
-        margin:0 auto;
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    
-        #interactive_area{               
+        main {
             margin: 0 auto;
-    
-            #Flute{
-    
-                height: auto;
-                width: 80vw;
-                
-                margin:0 auto; 
-                text-align: center; 
-                
-                #flute_photo{
-                    max-height: 70vh;
-    
-                    circle{
-                        fill:rgb(231, 139, 33);
-                        opacity: 0.5;
-                        r: 30;
-                        cx:495;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            #interactive_area {
+                margin: 0 auto;
+
+                #drums {
+                    width: 100%;
+
+                    #drums-photo {
+                        height: 60vh;
+                        .playing {
+                            transform: scale(1.01);
+                            box-shadow: 0 0 1rem #ffc600;
+                        }
+
+                        circle {
+                            fill: grey;
+                            opacity: 0.4;
+                        }
                     }
-    
-                    circle:hover{
-                        fill: white;
+                }
+
+                #Flute {
+
+                    height: auto;
+                    width: 80vw;
+
+                    margin: 0 auto;
+                    text-align: center;
+
+                    #flute_photo {
+                        max-height: 70vh;
+
+                        circle {
+                            fill: rgb(231, 139, 33);
+                            opacity: 0.5;
+                            r: 30;
+                            cx: 495;
+                        }
+
+                        circle:hover {
+                            fill: white;
+                        }
                     }
-                }            
+                }
             }
-        }
-        
-        #main_message{
-            margin-top: 2vh;
-            color: white;
-            font-family: 'Roboto', sans-serif;
-            text-align: center;
-            width: 80vw;
 
-            h1{                
-                font-size: 2.5rem;
-            }
-            h6{
-                font-size: 0.8rem;
-                color:$font-color;
-            }
-        }
-
-        #get_premium{
-            margin: 1vh auto;
-
-            h5{
+            #main_message {
+                margin-top: 2vh;
                 color: white;
-                background: #00De7A;
-                padding: 0.5vh 6vw;
-                border-radius: 20px;
-                text-transform: capitalize;
-                font-size: 1rem;
+                font-family: 'Roboto', sans-serif;
+                text-align: center;
+                width: 80vw;
+
+                h1 {
+                    font-size: 2.5rem;
+                }
+
+                h6 {
+                    font-size: 0.8rem;
+                    color: $font-color;
+                }
+            }
+
+            #get_premium {
+                margin: 1vh auto;
+
+                h5 {
+                    color: white;
+                    background: #00De7A;
+                    padding: 0.5vh 6vw;
+                    border-radius: 20px;
+                    text-transform: capitalize;
+                    font-size: 1rem;
+                }
             }
         }
+
+        footer {
+            max-height: 15vh;
+        }
+
     }
-    
-    footer{
-        max-height: 15vh;
-    }
-
-
-
+}
