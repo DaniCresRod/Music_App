@@ -22,20 +22,7 @@ $font-color: #119aab;
 
     main {
         .interactive-area {
-            #drums {
-                #drums-photo {
-                    .playing {
-                        transform: scale(1.01);
-                        border-color: #ffc600;
-                        box-shadow: 0 0 1rem #ffc600;
-                    }
-                    
-                    circle {
-                        fill: grey;
-                        opacity: 0.4;
-                    }
-                }
-            }
+            
         }
     }
 }
@@ -103,7 +90,23 @@ body{
     
         #interactive_area{               
             margin: 0 auto;
-    
+            #drums {
+                #drums-photo {
+                    width: 100%;
+
+                    .playing {
+                        transform: scale(1.01);
+                        border-color: #ffc600;
+                        box-shadow: 0 0 1rem #ffc600;
+                    }
+                    
+                    circle {
+                        fill: grey;
+                        opacity: 0.4;
+                    }
+                }
+            }
+
             #Flute{
     
                 height: auto;

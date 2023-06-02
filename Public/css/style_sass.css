@@ -531,15 +531,6 @@ legend + * {
 ::-webkit-datetime-edit-year-field {
   padding: 0;
 }
-* main .interactive-area #drums #drums-photo .playing {
-  transform: scale(1.01);
-  border-color: #ffc600;
-  box-shadow: 0 0 1rem #ffc600;
-}
-* main .interactive-area #drums #drums-photo circle {
-  fill: grey;
-  opacity: 0.4;
-}
 
 ::-webkit-inner-spin-button {
   height: auto;
@@ -11864,7 +11855,6 @@ textarea.form-control-lg {
   margin: 0 auto;
   padding: 0;
 }
-
 body {
   background: #225b63;
 }
@@ -11910,6 +11900,18 @@ body main {
 }
 body main #interactive_area {
   margin: 0 auto;
+}
+body main #interactive_area #drums #drums-photo {
+  width: 100%;
+}
+body main #interactive_area #drums #drums-photo .playing {
+  transform: scale(1.01);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
+body main #interactive_area #drums #drums-photo circle {
+  fill: grey;
+  opacity: 0.4;
 }
 body main #interactive_area #Flute {
   height: auto;
