@@ -11921,6 +11921,23 @@ textarea.form-control-lg {
 * body main #interactive_area #Flute #flute_photo circle:hover {
   fill: white;
 }
+* body main #interactive_area .feat_sausages {
+  position: absolute;
+  top: 11vh;
+  right: 0;
+  background: red;
+  width: 20vh;
+  height: 60vh;
+}
+* body main #interactive_area .show_sausages {
+  display: none;
+}
+* body main #interactive_area .interactive_mag_glass {
+  position: absolute;
+  top: 65vh;
+  left: 20px;
+  opacity: 0.2;
+}
 * body main #main_message {
   margin-top: 2vh;
   color: white;

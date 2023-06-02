@@ -72,7 +72,8 @@ document.addEventListener("keydown", function (event) {
 
     default:
       break;   
-    }
+  }
+
     if(mySound!=null){
       document.querySelector("#flute_photo a:nth-of-type("+(myText+1)+") text").setAttribute("fill", "black");
       playSound(mySound);
@@ -82,32 +83,47 @@ document.addEventListener("keydown", function (event) {
       });
     }    
 
-  });
+});
 
-  function playSound(sound) {
-    sound.playbackRate=2;
-    sound.volume=0.2;
-    sound.currentTime = 0;
-    sound.play();
+function playSound(sound) {
+  sound.playbackRate=2;
+  sound.volume=0.2;
+  sound.currentTime = 0;
+  sound.play();
+}
+
+let arrayKbKeys=["S", "D","F","J","K","L","Ñ"];
+let arrayNotes=["SI","LA","SOL","FA","MI","RE","DO"];
+let arrayXPosText=[477, 475, 466, 475, 475, 475, 470];
+
+function KeyChange(){
+  for(var i=0; i<arrayKbKeys.length; i++){
+    document.querySelector("#flute_photo a:nth-of-type("+(i+1)+") text").innerHTML=arrayKbKeys[i];
+    document.querySelector("#flute_photo a:nth-of-type("+(i+1)+") text").setAttribute("x", "485");
   }
+}
 
-  let arrayKbKeys=["S", "D","F","J","K","L","Ñ"];
-  let arrayNotes=["SI","LA","SOL","FA","MI","RE","DO"];
-  let arrayXPosText=[477, 475, 466, 475, 475, 475, 470];
+function NoteChange(){
+  for(var i=0; i<arrayKbKeys.length; i++){
+    document.querySelector("#flute_photo a:nth-of-type("+(i+1)+") text").innerHTML=arrayNotes[i];
+    document.querySelector("#flute_photo a:nth-of-type("+(i+1)+") text").setAttribute("x", arrayXPosText[i]);
+  }
+}
 
-  function KeyChange(){
-    for(var i=0; i<arrayKbKeys.length; i++){
-      document.querySelector("#flute_photo a:nth-of-type("+(i+1)+") text").innerHTML=arrayKbKeys[i];
-      document.querySelector("#flute_photo a:nth-of-type("+(i+1)+") text").setAttribute("x", "485");
+let instrumentArea = document.getElementById("sausage_fingers");
+
+document.querySelector("#interactive_area img").addEventListener("click", function(){
+    if(instrumentArea.classList.contains("show_sausages")){
+        instrumentArea.classList.remove("show_sausages");
     }
-  }
-  
-  function NoteChange(){
-    for(var i=0; i<arrayKbKeys.length; i++){
-      document.querySelector("#flute_photo a:nth-of-type("+(i+1)+") text").innerHTML=arrayNotes[i];
-      document.querySelector("#flute_photo a:nth-of-type("+(i+1)+") text").setAttribute("x", arrayXPosText[i]);
+    else{
+        instrumentArea.classList.add("show_sausages");
     }
-  }
+});
+
+scaleArray.forEach((x,index)=>function(){
+document.querySelector("#sausage_fingers ul").appendChild(document.createElement("li")).innerHTML="ya";
+});
   
 
 
