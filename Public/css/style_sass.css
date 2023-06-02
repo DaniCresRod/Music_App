@@ -11861,7 +11861,7 @@ textarea.form-control-lg {
 * body nav {
   position: fixed;
   top: 0;
-  width: 100vw;
+  width: 97vw;
   height: 8vh;
   margin-bottom: 3vh;
   background-color: #0a1e21;
@@ -11905,13 +11905,13 @@ textarea.form-control-lg {
   opacity: 0.4;
 }
 * body main #interactive_area #Flute {
-  height: auto;
-  width: 80vw;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
 }
 * body main #interactive_area #Flute #flute_photo {
-  max-height: 70vh;
+  height: 60vh;
+  width: 100%;
 }
 * body main #interactive_area #Flute #flute_photo circle {
   fill: rgb(231, 139, 33);

@@ -24,16 +24,16 @@ $button-colors: #00De7A;
     body {
         background: $base-body-color;
 
-        nav {
-            position: fixed;
-            top: 0;
-            width: 100vw;
-            height: 8vh;
-            margin-bottom: 3vh;
-
-
-            background-color: $base-body-color;
-            //background: $base-nav-color;  
+    nav{
+        position: fixed;
+        top:0;
+        width: 97vw;
+        height: 8vh;
+        margin-bottom: 3vh;
+        
+    
+        background-color: $base-body-color;
+        //background: $base-nav-color;  
 
 
             ul {
@@ -85,28 +85,26 @@ $button-colors: #00De7A;
                     }
                 }
 
-                #Flute {
-
-                    height: auto;
-                    width: 80vw;
-
-                    margin: 0 auto;
-                    text-align: center;
-
-                    #flute_photo {
-                        max-height: 70vh;
-
-                        circle {
-                            fill: rgb(231, 139, 33);
+                #Flute{              
+                    width: 100%;
+                    margin:0 auto; 
+                    text-align: center; 
+                    
+                    #flute_photo{
+                        height: 60vh;
+                        width:100%;
+        
+                        circle{
+                            fill:rgb(231, 139, 33);
                             opacity: 0.5;
                             r: 30;
-                            cx: 495;
+                            cx:495;
                         }
-
-                        circle:hover {
+        
+                        circle:hover{
                             fill: white;
                         }
-                    }
+                    }            
                 }
             }
 
