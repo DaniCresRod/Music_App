@@ -1,12 +1,11 @@
-const audioTest = "./sounds/hiHat.wav";
-const hiHat = new Audio("./sounds/hiHat.wav");
-const redoblante = new Audio("./sounds/redoblante.wav");
-const crash = new Audio("./sounds/crash.wav");
-const tom1 = new Audio("./sounds/tom1.wav");
-const tom2 = new Audio("./sounds/tom2.wav");
-const tom3 = new Audio("./sounds/tom3.wav");
-const tom4 = new Audio("./sounds/tom4.wav");
-const bombo = new Audio("./sounds/bombo.wav");
+const hiHat = new Audio("./Resources/sounds/hiHat.wav");
+const redoblante = new Audio("./Resources/sounds/redoblante.wav");
+const crash = new Audio("./Resources/sounds/crash.wav");
+const tom1 = new Audio("./Resources/sounds/tom1.wav");
+const tom2 = new Audio("./Resources/sounds/tom2.wav");
+const tom3 = new Audio("./Resources/sounds/tom3.wav");
+const tom4 = new Audio("./Resources/sounds/tom4.wav");
+const bombo = new Audio("./Resources/sounds/bombo.wav");
 const soundsDrums = [crash, tom4, hiHat, tom3, tom1, tom2, redoblante, bombo];
 
 const circleTom1 = document.querySelector("svg #tom1")
