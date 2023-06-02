@@ -28,7 +28,7 @@ body{
     nav{
         position: fixed;
         top:0;
-        width: 100vw;
+        width: 97vw;
         height: 8vh;
         margin-bottom: 3vh;
         
@@ -39,20 +39,6 @@ body{
         .custom_button{
             border: 0;
         }
-    
-        /*button{            
-            margin:0 auto;
-            
-            
-            
-
-            .custom_icon{
-                background-image: url(../../Public/Images/Boton_menu.svg);
-                background-position: center;
-                background-size: cover;
-            }
-            
-        }*/
     
         ul{
             li{
@@ -86,16 +72,14 @@ body{
         #interactive_area{               
             margin: 0 auto;
     
-            #Flute{
-    
-                height: auto;
-                width: 80vw;
-                
+            #Flute{              
+                width: 100%;
                 margin:0 auto; 
                 text-align: center; 
                 
                 #flute_photo{
-                    max-height: 70vh;
+                    height: 60vh;
+                    width:100%;
     
                     circle{
                         fill:rgb(231, 139, 33);
@@ -139,13 +123,10 @@ body{
                 font-size: 1rem;
             }
         }
-    }
-    
-    footer{
-        max-height: 15vh;
-    }
+    }    
 
 }
+
 
 
 

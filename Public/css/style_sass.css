@@ -11862,23 +11862,10 @@ body {
 body nav {
   position: fixed;
   top: 0;
-  width: 100vw;
+  width: 97vw;
   height: 8vh;
   margin-bottom: 3vh;
   background-color: #225b63;
-  /*button{            
-      margin:0 auto;
-
-
-
-
-      .custom_icon{
-          background-image: url(../../Public/Images/Boton_menu.svg);
-          background-position: center;
-          background-size: cover;
-      }
-
-  }*/
 }
 body nav .custom_button {
   border: 0;
@@ -11908,13 +11895,13 @@ body main #interactive_area {
   margin: 0 auto;
 }
 body main #interactive_area #Flute {
-  height: auto;
-  width: 80vw;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
 }
 body main #interactive_area #Flute #flute_photo {
-  max-height: 70vh;
+  height: 60vh;
+  width: 100%;
 }
 body main #interactive_area #Flute #flute_photo circle {
   fill: rgb(231, 139, 33);
@@ -11949,9 +11936,6 @@ body main #get_premium h5, body main #get_premium .h5 {
   border-radius: 20px;
   text-transform: capitalize;
   font-size: 1rem;
-}
-body footer {
-  max-height: 15vh;
 }
 
 /*# sourceMappingURL=style_sass.css.map */

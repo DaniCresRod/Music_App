@@ -5,8 +5,9 @@ const noteFa = new Audio("Resources/Audio/fa.m4a");
 const noteSol = new Audio("Resources/Audio/sol.m4a");
 const noteLa = new Audio("Resources/Audio/la.m4a");
 const noteSi = new Audio("Resources/Audio/si.m4a");
+const noteDoH = new Audio("Resources/Audio/do_mayor.m4a");
 
-const scaleArray=[noteSi, noteLa, noteSol, noteFa, noteMi, noteRe, noteDo];
+const scaleArray=[noteSi, noteLa, noteSol, noteFa, noteMi, noteRe, noteDo, noteDoH];
 
 document.querySelectorAll("#Flute a").forEach( (x,index)=>{ 
     
@@ -64,6 +65,11 @@ document.addEventListener("keydown", function (event) {
       mySound=scaleArray[6];
       myText=6;
       break;
+      case 65: //Tecla 'A' Do sostenido, solo teclado
+      mySound=scaleArray[7];
+      myText=6;
+      break;
+
     default:
       break;   
     }
