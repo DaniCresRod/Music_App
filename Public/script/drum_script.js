@@ -8,15 +8,15 @@ const tom4 = new Audio("./Resources/Audio/tom4.wav");
 const bombo = new Audio("./Resources/Audio/bombo.wav");
 const soundsDrums = [crash, tom4, hiHat, tom3, tom1, tom2, redoblante, bombo];
 
-const circleTom1 = document.querySelector("svg #tom1")
-const circleTom2 = document.querySelector("svg #tom2")
-const circleTom3 = document.querySelector("svg #tom3")
-const circleTom4 = document.querySelector("svg #tom4")
-const circleHiHat = document.querySelector("svg #hiHat")
-const circleCrash = document.querySelector("svg #crash")
-const circleBombo = document.querySelector("svg #bombo")
-const circleRedoblante = document.querySelector("svg #redoblante")
-
+const circleTom1 = document.querySelector("svg #tom1");
+const circleTom2 = document.querySelector("svg #tom2");
+const circleTom3 = document.querySelector("svg #tom3");
+const circleTom4 = document.querySelector("svg #tom4");
+const circleHiHat = document.querySelector("svg #hiHat");
+const circleCrash = document.querySelector("svg #crash");
+const circleBombo = document.querySelector("svg #bombo");
+const circleRedoblante = document.querySelector("svg #redoblante");
+const domArray = [circleCrash, circleTom4, circleHiHat, circleTom3, circleTom1, circleTom2, circleRedoblante, circleBombo];
 
 
 document.addEventListener("keydown", function (event) {
@@ -25,60 +25,60 @@ document.addEventListener("keydown", function (event) {
   switch (keyCode) {
     case 65: // Tecla 'A'
       playSound(tom1);
-      circleTom1.classList.add("playing")
-        setTimeout( () =>{
-        circleTom1.classList.remove("playing")
-      },50)
+      circleTom1.classList.add("playing");
+      setTimeout(() => {
+        circleTom1.classList.remove("playing");
+      }, 50);
       console.log(circleTom1);
       break;
     case 83: // Tecla 'S'
       playSound(tom2);
-      circleTom2.classList.add("playing")
-      setTimeout( () =>{
-        circleTom2.classList.remove("playing")
-      },50)
+      circleTom2.classList.add("playing");
+      setTimeout(() => {
+        circleTom2.classList.remove("playing");
+      }, 50);
       break;
     case 68: // Tecla 'D'
       playSound(tom3);
-      circleTom3.classList.add("playing")
-      setTimeout( () =>{
-        circleTom3.classList.remove("playing")
-      },50)
+      circleTom3.classList.add("playing");
+      setTimeout(() => {
+        circleTom3.classList.remove("playing");
+      }, 50);
       break;
     case 70: // Tecla 'F'
       playSound(tom4);
-      circleTom4.classList.add("playing")
-      setTimeout( () =>{
-        circleTom4.classList.remove("playing")
-      },50)
+      circleTom4.classList.add("playing");
+      setTimeout(() => {
+        circleTom4.classList.remove("playing");
+      }, 50);
       break;
     case 90: //Tecla 'Z'
       playSound(crash);
-      circleCrash.classList.add("playing")
-      setTimeout( () =>{
-        circleCrash.classList.remove("playing")
-      },50)
+      circleCrash.classList.add("playing");
+      setTimeout(() => {
+        circleCrash.classList.remove("playing");
+      }, 50);
       break;
-    case 88:  //Tecla 'X'
-      playSound(hiHat); 
-      circleHiHat.classList.add("playing")
-      setTimeout( () =>{
-        circleHiHat.classList.remove("playing")
-      },50)
+    case 88: //Tecla 'X'
+      playSound(hiHat);
+      circleHiHat.classList.add("playing");
+      setTimeout(() => {
+        circleHiHat.classList.remove("playing");
+      }, 50);
       break;
-    case 67:  //Tecla 'C'
-      playSound(bombo); 
-      circleBombo.classList.add("playing")
-      setTimeout( () =>{
-        circleBombo.classList.remove("playing")
-      },50)
+    case 67: //Tecla 'C'
+      playSound(bombo);
+      circleBombo.classList.add("playing");
+      setTimeout(() => {
+        circleBombo.classList.remove("playing");
+      }, 50);
       break;
-    case 86:   //Tecla 'V'
+    case 86: //Tecla 'V'
       playSound(redoblante);
-      circleRedoblante.classList.add("playing")
-      setTimeout( () =>{
-        circleRedoblante.classList.remove("playing")
-      },50)
+      circleRedoblante.classList.add("playing");
+      setTimeout(() => {
+        circleRedoblante.classList.remove("playing");
+      }, 50);
       break;
   }
 });
@@ -91,7 +91,12 @@ function playSound(sound) {
 document.querySelectorAll("#drums a").forEach((x, index) => {
   x.addEventListener("click", function (event) {
     event.preventDefault();
-    let target = soundsDrums[index]
+    let target = soundsDrums[index];
+    let targetDom = domArray[index];
+    targetDom.classList.add("playing")
+    setTimeout(() => {
+      targetDom.classList.remove("playing")
+    },50)
     target.playbackRate = 2;
     target.play();
 
@@ -102,3 +107,5 @@ document.querySelectorAll("#drums a").forEach((x, index) => {
     }
   });
 });
+
+
