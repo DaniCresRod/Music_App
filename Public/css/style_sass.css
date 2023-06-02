@@ -11874,11 +11874,9 @@ textarea.form-control-lg {
   height: 8vh;
   padding: 1.5vh 1.5vw;
 }
-* body nav :link {
+* body nav :link, * body nav :visited {
   color: #119aab;
-}
-* body nav :visited {
-  color: #119aab;
+  text-decoration: none;
 }
 * body main {
   margin: 0 auto;
@@ -11940,7 +11938,10 @@ textarea.form-control-lg {
 * body main #get_premium {
   margin: 1vh auto;
 }
-* body main #get_premium h5, * body main #get_premium .h5 {
+* body main #get_premium .i_hate_BS {
+  text-decoration: none;
+}
+* body main #get_premium a h5, * body main #get_premium a .h5 {
   color: white;
   background: #00De7A;
   padding: 0.5vh 6vw;

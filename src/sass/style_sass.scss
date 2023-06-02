@@ -24,23 +24,19 @@ $button-colors: #00De7A;
     body {
         background: $base-body-color;
 
-    nav{
-        position: fixed;
-        top:0;
-        width: 97vw;
-        height: 8vh;
-        margin-bottom: 3vh;
+        nav{
+            position: fixed;
+            top:0;
+            width: 97vw;
+            height: 8vh;
+            margin-bottom: 3vh;            
         
-    
-        background-color: $base-body-color;
-        //background: $base-nav-color;  
-
+            background-color: $base-body-color;            
 
             ul {
                 li {
                     display: flex;
                     float: right;
-
                 }
             }
 
@@ -49,12 +45,9 @@ $button-colors: #00De7A;
                 padding: 1.5vh 1.5vw;
             }
 
-            :link {
+            :link, :visited {
                 color: $font-color;
-            }
-
-            :visited {
-                color: $font-color;
+                text-decoration: none;
             }
         }
 
@@ -127,15 +120,21 @@ $button-colors: #00De7A;
             }
 
             #get_premium {
-                margin: 1vh auto;
+                margin: 1vh auto;  
+                
+                .i_hate_BS{
+                    text-decoration: none;
+                }
 
-                h5 {
-                    color: white;
-                    background: $button-colors;
-                    padding: 0.5vh 6vw;
-                    border-radius: 20px;
-                    text-transform: capitalize;
-                    font-size: 1rem;
+                a{
+                    h5 {
+                        color: white;
+                        background: $button-colors;
+                        padding: 0.5vh 6vw;
+                        border-radius: 20px;
+                        text-transform: capitalize;
+                        font-size: 1rem;
+                    }
                 }
             }
         }
