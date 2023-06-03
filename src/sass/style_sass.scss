@@ -99,14 +99,18 @@ $button-colors: #00De7A;
                         circle:hover{
                             fill: white;
                         }
-                    }            
+                    } 
+                    @media screen and (width > 500px) {  
+                        img{
+                            display: none;
+                        }
+                    }           
                 }
 
                 .feat_sausages{                    
                     position:absolute;
                     top: 11vh;
                     right: 0;
-                    background: red;
                     width: 20vh;
                     height: 60vh;                    
                 }
@@ -157,6 +161,52 @@ $button-colors: #00De7A;
                         font-size: 1rem;
                     }
                 }
+            }
+
+            @media screen and (width > 500px) {  
+                #sausage_fingers{
+                    display: none;
+                }
+            } 
+
+            #sausage_fingers{                
+                
+                ul{                    
+                    list-style-type: none;
+                    width: 100%;
+                    height: 100%;
+                    list-style-position: inside;
+                    padding:0;
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+
+                    li{
+                        width: 100%;                        
+                        height: 7vh;
+                        background: $button-colors;                            
+                        border-radius: 15px;
+                        justify-content: center;
+                        display: flex;
+                        align-items: center;
+
+                        .big_finger_note{  
+
+                            text-align: center;
+                            color: white;
+                            font-weight: bold;
+                            margin: 0 auto; 
+                            padding: auto auto;
+                            font-size: larger;
+                                          
+        
+                        }
+                    }
+                    
+                }
+
+                
             }
         }
 

@@ -121,8 +121,35 @@ document.querySelector("#interactive_area img").addEventListener("click", functi
     }
 });
 
-scaleArray.forEach((x,index)=>function(){
-document.querySelector("#sausage_fingers ul").appendChild(document.createElement("li")).innerHTML="ya";
+scaleArray.forEach((x,index)=>{
+
+  if(arrayNotes[index]!=null){
+    let oneBigNote="<p class='big_finger_note'>"+arrayNotes[index]+"</p>";
+    
+    document.querySelector("#sausage_fingers ul").appendChild(document.createElement("li")).innerHTML=oneBigNote;
+
+    let oneBigNote_element=document.querySelector("#sausage_fingers ul li:last-child");
+    
+    oneBigNote_element.addEventListener("click", function(){ 
+
+      oneBigNote_element.style.background="orange";      
+
+      let target=scaleArray[index];
+      target.playbackRate=2;
+      target.volume=0.2;
+      target.play();
+
+      if(target.currentTime>0){
+        target.pause();
+        target.currentTime=0;
+        target.play();
+      }
+
+      target.addEventListener("ended", function(){
+        oneBigNote_element.style.background=null;
+      });
+    });
+  }
 });
   
 
