@@ -8,20 +8,19 @@
 // Then add additional custom code here
 
 //Fuentes
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Roboto&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Roboto&display=swap");
 
 //Colores
 $base-body-color: #0a1e21;
 $font-color: #119aab;
+$button-colors: #00de7a;
 
 * {
-    margin: 0 auto;
-    padding: 0;
+  margin: 0 auto;
+  padding: 0;
 
-    body {
-        background: $base-body-color;
-        }
+  body {
+    background: $base-body-color;
 
         nav {
             position: fixed;
@@ -71,10 +70,10 @@ $font-color: #119aab;
                 }
             }
 
-            img {
-                height: 8vh;
-                padding: 1.5vh 1.5vw;
-            }
+      img {
+        height: 8vh;
+        padding: 1.5vh 1.5vw;
+      }
 
             :link {
                 color: white;
@@ -92,84 +91,102 @@ $font-color: #119aab;
             align-items: center;
             justify-content: center;
 
-            #interactive_area {
-                margin: 0 auto;
-
-                #drums {
-                    width: 100%;
-
-                    #drums-photo {
-                        height: 60vh;
-                        .playing {
-                            transform: scale(1.01);
-                            box-shadow: 0 0 1rem #ffc600;
-                        }
-
-                        circle {
-                            fill: grey;
-                            opacity: 0.4;
-                        }
-                    }
-                }
-
-                #Flute {
-
-                    height: auto;
-                    width: 80vw;
-
-                    margin: 0 auto;
-                    text-align: center;
-
-                    #flute_photo {
-                        max-height: 70vh;
-
-                        circle {
-                            fill: rgb(231, 139, 33);
-                            opacity: 0.5;
-                            r: 30;
-                            cx: 495;
-                        }
-
-                        circle:hover {
-                            fill: white;
-                        }
-                    }
-                }
-            }
-
-            #main_message {
-                margin-top: 2vh;
-                color: white;
-                font-family: 'Roboto', sans-serif;
-                text-align: center;
-                width: 80vw;
-
-                h1 {
-                    font-size: 2.5rem;
-                }
-
-                h6 {
-                    font-size: 0.8rem;
-                    color: $font-color;
-                }
-            }
-
-            #get_premium {
-                margin: 1vh auto;
-
-                h5 {
-                    color: white;
-                    background: #00De7A;
-                    padding: 0.5vh 6vw;
-                    border-radius: 20px;
-                    text-transform: capitalize;
-                    font-size: 1rem;
-                }
-            }
+      #interactive_area {
+        margin: 0 auto;
+        width: 50vw;
+        height: 50vh;
+        display: flex;
+        align-items: center;
+          
+        @media (max-width: 821px){
+          width: 100vw;
         }
 
-        footer {
-            max-height: 15vh;
+
+
+        #drums {
+          padding-top: 8%;
+            width: 80%;
+
+          #drums-photo {
+            
+            .playing {
+              transform: scale(1.01);
+              box-shadow: 0 0 1rem #ffc600;
+            }
+
+            circle {
+              fill: grey;
+              opacity: 0.4;
+            }
+          }
         }
 
+        #Flute {
+          width: 100%;
+          margin: 0 auto;
+          text-align: center;
+
+          #flute_photo {
+            height: 60vh;
+            width: 100%;
+
+            circle {
+              fill: rgb(231, 139, 33);
+              opacity: 0.5;
+              r: 30;
+              cx: 495;
+            }
+
+            circle:hover {
+              fill: white;
+            }
+          }
+        }
+      }
+
+      #main_message {
+        width: 50vw;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+          @media (max-width: 821px){
+            width: 100vw;
+          }
+    
+
+        h1 {
+          font-size: 3.5rem;
+          padding: 0 20%;
+          color: white;
+        }
+
+        h6 {
+          font-size: 1rem;
+          color: $font-color;
+          margin: 3% 0;
+        }
+
+        @mixin button_format{
+          margin: 1vh auto;
+          color: white;
+          background: $button-colors;
+          padding: 0.5rem 1rem;
+          border-radius: 20rem;
+          text-transform: capitalize;
+          font-size: 1.5rem;
+          text-align: center;
+          font-weight: bold;
+        }
+        #return {
+            @include button_format()
+        }
+
+        #get_premium {
+          @include button_format()
+        }
+      }
     }
+  }

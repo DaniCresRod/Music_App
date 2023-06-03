@@ -11907,21 +11907,55 @@ textarea.form-control-lg {
 * nav :visited {
   color: white;
 }
+<<<<<<< HEAD
+=======
+* body :link, * body :visited {
+  color: #119aab;
+  text-decoration: none;
+}
+>>>>>>> 94d262c96503d6bf0e2cb8083f29ab371d823de1
 * main {
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 90vh;
+  width: 100vw;
 }
+<<<<<<< HEAD
+=======
+@media (max-width: 821px) {
+  * main {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: 100vw;
+  }
+}
+>>>>>>> 94d262c96503d6bf0e2cb8083f29ab371d823de1
 * main #interactive_area {
   margin: 0 auto;
+  width: 50vw;
+  height: 50vh;
+  display: flex;
+  align-items: center;
 }
+<<<<<<< HEAD
 * main #interactive_area #drums {
   width: 100%;
 }
 * main #interactive_area #drums #drums-photo {
   height: 60vh;
+=======
+@media (max-width: 821px) {
+  * main #interactive_area {
+    width: 100vw;
+  }
+}
+* main #interactive_area #drums {
+  padding-top: 8%;
+  width: 80%;
+>>>>>>> 94d262c96503d6bf0e2cb8083f29ab371d823de1
 }
 * main #interactive_area #drums #drums-photo .playing {
   transform: scale(1.01);
@@ -11932,13 +11966,22 @@ textarea.form-control-lg {
   opacity: 0.4;
 }
 * main #interactive_area #Flute {
+<<<<<<< HEAD
   height: auto;
   width: 80vw;
+=======
+  width: 100%;
+>>>>>>> 94d262c96503d6bf0e2cb8083f29ab371d823de1
   margin: 0 auto;
   text-align: center;
 }
 * main #interactive_area #Flute #flute_photo {
+<<<<<<< HEAD
   max-height: 70vh;
+=======
+  height: 60vh;
+  width: 100%;
+>>>>>>> 94d262c96503d6bf0e2cb8083f29ab371d823de1
 }
 * main #interactive_area #Flute #flute_photo circle {
   fill: rgb(231, 139, 33);
@@ -11950,12 +11993,20 @@ textarea.form-control-lg {
   fill: white;
 }
 * main #main_message {
+<<<<<<< HEAD
   margin-top: 2vh;
   color: white;
   font-family: "Roboto", sans-serif;
+=======
+  width: 50vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+>>>>>>> 94d262c96503d6bf0e2cb8083f29ab371d823de1
   text-align: center;
-  width: 80vw;
 }
+<<<<<<< HEAD
 * main #main_message h1, * main #main_message .h1 {
   font-size: 2.5rem;
 }
@@ -11967,15 +12018,49 @@ textarea.form-control-lg {
   margin: 1vh auto;
 }
 * main #get_premium h5, * main #get_premium .h5 {
-  color: white;
-  background: #00De7A;
-  padding: 0.5vh 6vw;
-  border-radius: 20px;
-  text-transform: capitalize;
-  font-size: 1rem;
+=======
+@media (max-width: 821px) {
+  * main #main_message {
+    width: 100vw;
+  }
 }
+* main #main_message h1, * main #main_message .h1 {
+  font-size: 3.5rem;
+  padding: 0 20%;
+>>>>>>> 94d262c96503d6bf0e2cb8083f29ab371d823de1
+  color: white;
+}
+<<<<<<< HEAD
 * footer {
   max-height: 15vh;
+=======
+* main #main_message h6, * main #main_message .h6 {
+  font-size: 1rem;
+  color: #119aab;
+  margin: 3% 0;
+}
+* main #main_message #return {
+  margin: 1vh auto;
+  color: white;
+  background: #00de7a;
+  padding: 0.5rem 1rem;
+  border-radius: 20rem;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+* main #main_message #get_premium {
+  margin: 1vh auto;
+  color: white;
+  background: #00de7a;
+  padding: 0.5rem 1rem;
+  border-radius: 20rem;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+>>>>>>> 94d262c96503d6bf0e2cb8083f29ab371d823de1
 }
 
 /*# sourceMappingURL=style_sass.css.map */
