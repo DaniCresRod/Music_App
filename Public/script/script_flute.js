@@ -132,7 +132,7 @@ scaleArray.forEach((x,index)=>{
     
     oneBigNote_element.addEventListener("click", function(){ 
 
-      oneBigNote_element.style.background="orange";      
+      oneBigNote_element.style.background="#119aab";      
 
       let target=scaleArray[index];
       target.playbackRate=2;
