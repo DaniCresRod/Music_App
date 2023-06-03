@@ -62,14 +62,26 @@ $button-colors: #00de7a;
       height: 90vh;
       width: 100vw;
 
+        @media (max-width: 800px){
+          display: flex;
+          flex-direction: column;
+          height: 90vh;
+          width: 100vw;
+
+        }
+    
 
       #interactive_area {
         margin: 0 auto;
         width: 50vw;
-        height: 60vh;
-        max-width: 690px;
+        height: 50vh;
         display: flex;
-        align-content: center;
+        align-items: center;
+          
+        @media (max-width: 800px){
+          width: 100vw;
+        }
+
 
 
         #drums {
@@ -115,35 +127,39 @@ $button-colors: #00de7a;
 
       #main_message {
         width: 50vw;
+        height: 50vh;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        text-align: center;
+          @media (max-width: 800px){
+            width: 100vw;
+          }
     
 
         h1 {
-          font-size: 2.5rem;
+          font-size: 3.5rem;
+          padding: 0 20%;
+          color: white;
         }
 
         h6 {
-          font-size: 0.8rem;
+          font-size: 1rem;
           color: $font-color;
+          margin: 3% 0;
         }
 
         h5 {
             margin: 1vh auto;
             color: white;
             background: $button-colors;
-            padding: 0.5vw;
-            border-radius: 20px;
+            padding: 0.8rem;
+            border-radius: 20rem;
             text-transform: capitalize;
-            font-size: 1rem;
-            width: 25%;
+            font-size: 1.5rem;
             text-align: center;
         }
       }
     }
-  }
-
-  footer {
-    max-height: 15vh;
   }
 }
