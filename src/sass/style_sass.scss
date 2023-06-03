@@ -3,7 +3,7 @@
 
 // Include any default variable overrides here (though functions won't be available)
 
-//@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap/scss/bootstrap";
 
 // Then add additional custom code here
 
@@ -12,7 +12,6 @@
 
 
 //Colores
-$base-nav-color: grey;
 $base-body-color: #0a1e21;
 $font-color: #119aab;
 
@@ -50,10 +49,11 @@ $font-color: #119aab;
                     flex-direction: column;
                     align-items: flex-end;
                 }
-            
+                
                 .navbar-nav .nav-item {
                     margin-bottom: 10px;
                 }
+
             }
 
             .navbar-toggler-icon {
@@ -66,8 +66,7 @@ $font-color: #119aab;
             ul {
                 li {
                     display: flex;
-                    // float: flex;
-                    justify-self: right;
+                    justify-self: right;   
 
                 }
             }
