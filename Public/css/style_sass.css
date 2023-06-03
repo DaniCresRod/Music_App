@@ -11855,10 +11855,11 @@ textarea.form-control-lg {
   margin: 0 auto;
   padding: 0;
 }
-* body {
+
+body {
   background: #0a1e21;
 }
-* nav {
+body nav {
   position: fixed;
   top: 0;
   width: 100vw;
@@ -11867,7 +11868,7 @@ textarea.form-control-lg {
   background-color: #0a1e21;
 }
 @media (max-width: 768px) {
-  * nav .navbar-collapse {
+  body nav .navbar-collapse {
     position: absolute;
     top: 100%;
     background: linear-gradient(#10292c, #307078);
@@ -11878,193 +11879,114 @@ textarea.form-control-lg {
     padding-left: 100px;
     padding-right: 100px;
   }
-  * nav .navbar-nav {
+  body nav .navbar-nav {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
   }
-  * nav .navbar-nav .nav-item {
+  body nav .navbar-nav .nav-item {
     margin-bottom: 10px;
   }
 }
-* nav .navbar-toggler-icon {
+body nav .navbar-toggler-icon {
   background-color: #00De7A;
   border-radius: 5px;
   width: 40px;
   height: 35px;
 }
-* nav ul li {
+body nav ul li {
   display: flex;
   justify-self: right;
 }
-* nav img {
+body nav img {
   height: 8vh;
   padding: 1.5vh 1.5vw;
 }
-* nav :link {
+body nav :link {
   color: white;
 }
-* nav :visited {
+body nav :visited {
   color: white;
 }
-<<<<<<< HEAD
-=======
-* body :link, * body :visited {
-  color: #119aab;
-  text-decoration: none;
-}
->>>>>>> 94d262c96503d6bf0e2cb8083f29ab371d823de1
-* main {
+body main {
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 90vh;
-  width: 100vw;
 }
-<<<<<<< HEAD
-=======
-@media (max-width: 821px) {
-  * main {
-    display: flex;
-    flex-direction: column;
-    height: 90vh;
-    width: 100vw;
-  }
-}
->>>>>>> 94d262c96503d6bf0e2cb8083f29ab371d823de1
-* main #interactive_area {
+body main #interactive_area {
   margin: 0 auto;
   width: 50vw;
   height: 50vh;
   display: flex;
   align-items: center;
 }
-<<<<<<< HEAD
-* main #interactive_area #drums {
-  width: 100%;
-}
-* main #interactive_area #drums #drums-photo {
-  height: 60vh;
-=======
 @media (max-width: 821px) {
-  * main #interactive_area {
+  body main #interactive_area {
     width: 100vw;
   }
 }
-* main #interactive_area #drums {
+body main #interactive_area #drums {
   padding-top: 8%;
-  width: 80%;
->>>>>>> 94d262c96503d6bf0e2cb8083f29ab371d823de1
 }
-* main #interactive_area #drums #drums-photo .playing {
+body main #interactive_area #drums #drums-photo {
+  width: 100%;
+  height: 60vh;
+}
+body main #interactive_area #drums #drums-photo .playing {
   transform: scale(1.01);
   box-shadow: 0 0 1rem #ffc600;
 }
-* main #interactive_area #drums #drums-photo circle {
+body main #interactive_area #drums #drums-photo circle {
   fill: grey;
   opacity: 0.4;
 }
-* main #interactive_area #Flute {
-<<<<<<< HEAD
-  height: auto;
-  width: 80vw;
-=======
+body main #interactive_area #Flute {
   width: 100%;
->>>>>>> 94d262c96503d6bf0e2cb8083f29ab371d823de1
   margin: 0 auto;
   text-align: center;
 }
-* main #interactive_area #Flute #flute_photo {
-<<<<<<< HEAD
-  max-height: 70vh;
-=======
+body main #interactive_area #Flute #flute_photo {
   height: 60vh;
   width: 100%;
->>>>>>> 94d262c96503d6bf0e2cb8083f29ab371d823de1
 }
-* main #interactive_area #Flute #flute_photo circle {
+body main #interactive_area #Flute #flute_photo circle {
   fill: rgb(231, 139, 33);
-  opacity: 0.5;
+  opacity: 0.3;
   r: 30;
   cx: 495;
 }
-* main #interactive_area #Flute #flute_photo circle:hover {
+body main #interactive_area #Flute #flute_photo circle:hover {
   fill: white;
 }
-<<<<<<< HEAD
-* main #main_message {
-<<<<<<< HEAD
-=======
 @media screen and (width > 500px) {
-  * body main #interactive_area #Flute img {
+  body main #interactive_area #Flute img {
     display: none;
   }
 }
-* body main #interactive_area .feat_sausages {
+body main #interactive_area .feat_sausages {
   position: absolute;
   top: 11vh;
   right: 0;
   width: 20vh;
   height: 60vh;
 }
-* body main #interactive_area .show_sausages {
+body main #interactive_area .show_sausages {
   display: none;
 }
-* body main #interactive_area .interactive_mag_glass {
+body main #interactive_area .interactive_mag_glass {
   position: absolute;
   top: 65vh;
   left: 20px;
   opacity: 0.2;
 }
-* body main #main_message {
->>>>>>> feature_sausage_fingers
-  margin-top: 2vh;
-  color: white;
-  font-family: "Roboto", sans-serif;
-=======
-  width: 50vw;
-  height: 50vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
->>>>>>> 94d262c96503d6bf0e2cb8083f29ab371d823de1
-  text-align: center;
-}
-<<<<<<< HEAD
-* main #main_message h1, * main #main_message .h1 {
-  font-size: 2.5rem;
-}
-* main #main_message h6, * main #main_message .h6 {
-  font-size: 0.8rem;
-  color: #119aab;
-}
-* main #get_premium {
-  margin: 1vh auto;
-}
-* main #get_premium h5, * main #get_premium .h5 {
-=======
-@media (max-width: 821px) {
-  * main #main_message {
-    width: 100vw;
-  }
-}
-* main #main_message h1, * main #main_message .h1 {
-  font-size: 3.5rem;
-  padding: 0 20%;
->>>>>>> 94d262c96503d6bf0e2cb8083f29ab371d823de1
-  color: white;
-}
-<<<<<<< HEAD
-<<<<<<< HEAD
-* footer {
-=======
 @media screen and (width > 500px) {
-  * body main #sausage_fingers {
+  body main #sausage_fingers {
     display: none;
   }
 }
-* body main #sausage_fingers ul {
+body main #sausage_fingers ul {
   list-style-type: none;
   width: 100%;
   height: 100%;
@@ -12074,16 +11996,16 @@ textarea.form-control-lg {
   flex-direction: column;
   justify-content: space-around;
 }
-* body main #sausage_fingers ul li {
+body main #sausage_fingers ul li {
   width: 100%;
   height: 7vh;
-  background: #00De7A;
+  background: #00de7a;
   border-radius: 15px;
   justify-content: center;
   display: flex;
   align-items: center;
 }
-* body main #sausage_fingers ul li .big_finger_note {
+body main #sausage_fingers ul li .big_finger_note {
   text-align: center;
   color: white;
   font-weight: bold;
@@ -12091,16 +12013,30 @@ textarea.form-control-lg {
   padding: auto auto;
   font-size: larger;
 }
-* body footer {
->>>>>>> feature_sausage_fingers
-  max-height: 15vh;
-=======
-* main #main_message h6, * main #main_message .h6 {
+body main #main_message {
+  width: 50vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+@media (max-width: 821px) {
+  body main #main_message {
+    width: 100vw;
+  }
+}
+body main #main_message h1, body main #main_message .h1 {
+  font-size: 3.5rem;
+  padding: 0 20%;
+  color: white;
+}
+body main #main_message h6, body main #main_message .h6 {
   font-size: 1rem;
   color: #119aab;
   margin: 3% 0;
 }
-* main #main_message #return {
+body main #main_message #return {
   margin: 1vh auto;
   color: white;
   background: #00de7a;
@@ -12111,7 +12047,7 @@ textarea.form-control-lg {
   text-align: center;
   font-weight: bold;
 }
-* main #main_message #get_premium {
+body main #main_message #get_premium {
   margin: 1vh auto;
   color: white;
   background: #00de7a;
@@ -12121,7 +12057,6 @@ textarea.form-control-lg {
   font-size: 1.5rem;
   text-align: center;
   font-weight: bold;
->>>>>>> 94d262c96503d6bf0e2cb8083f29ab371d823de1
 }
 
 /*# sourceMappingURL=style_sass.css.map */
