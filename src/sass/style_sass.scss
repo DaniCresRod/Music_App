@@ -66,7 +66,7 @@ $button-colors: #00de7a;
       height: 90vh;
       width: 100vw;
 
-        @media (max-width: 800px){
+        @media (max-width: 821px){
           display: flex;
           flex-direction: column;
           height: 90vh;
@@ -82,7 +82,7 @@ $button-colors: #00de7a;
         display: flex;
         align-items: center;
           
-        @media (max-width: 800px){
+        @media (max-width: 821px){
           width: 100vw;
         }
 
@@ -136,7 +136,7 @@ $button-colors: #00de7a;
         flex-direction: column;
         justify-content: center;
         text-align: center;
-          @media (max-width: 800px){
+          @media (max-width: 821px){
             width: 100vw;
           }
     
@@ -153,17 +153,24 @@ $button-colors: #00de7a;
           margin: 3% 0;
         }
 
-        h5 {
-            margin: 1vh auto;
-            color: white;
-            background: $button-colors;
-            padding: 0.8rem;
-            border-radius: 20rem;
-            text-transform: capitalize;
-            font-size: 1.5rem;
-            text-align: center;
+        @mixin button_format{
+          margin: 1vh auto;
+          color: white;
+          background: $button-colors;
+          padding: 0.5rem 1rem;
+          border-radius: 20rem;
+          text-transform: capitalize;
+          font-size: 1.5rem;
+          text-align: center;
+          font-weight: bold;
+        }
+        #return {
+            @include button_format()
+        }
+
+        #get_premium {
+          @include button_format()
         }
       }
     }
   }
-}

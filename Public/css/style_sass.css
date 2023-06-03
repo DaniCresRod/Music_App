@@ -11861,7 +11861,7 @@ textarea.form-control-lg {
 * body nav {
   position: fixed;
   top: 0;
-  width: 97vw;
+  width: 100vw;
   height: 8vh;
   margin-bottom: 3vh;
   background-color: #0a1e21;
@@ -11874,11 +11874,17 @@ textarea.form-control-lg {
   height: 8vh;
   padding: 1.5vh 1.5vw;
 }
-* body nav :link, * body nav :visited {
+* body nav :link {
+  color: #119aab;
+}
+* body nav :visited {
+  color: #119aab;
+}
+* body :link, * body :visited {
   color: #119aab;
   text-decoration: none;
 }
-* body main {
+* main {
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -11886,57 +11892,57 @@ textarea.form-control-lg {
   height: 90vh;
   width: 100vw;
 }
-@media (max-width: 800px) {
-  * body main {
+@media (max-width: 821px) {
+  * main {
     display: flex;
     flex-direction: column;
     height: 90vh;
     width: 100vw;
   }
 }
-* body main #interactive_area {
+* main #interactive_area {
   margin: 0 auto;
   width: 50vw;
   height: 50vh;
   display: flex;
   align-items: center;
 }
-@media (max-width: 800px) {
-  * body main #interactive_area {
+@media (max-width: 821px) {
+  * main #interactive_area {
     width: 100vw;
   }
 }
-* body main #interactive_area #drums {
+* main #interactive_area #drums {
   padding-top: 8%;
   width: 80%;
 }
-* body main #interactive_area #drums #drums-photo .playing {
+* main #interactive_area #drums #drums-photo .playing {
   transform: scale(1.01);
   box-shadow: 0 0 1rem #ffc600;
 }
-* body main #interactive_area #drums #drums-photo circle {
+* main #interactive_area #drums #drums-photo circle {
   fill: grey;
   opacity: 0.4;
 }
-* body main #interactive_area #Flute {
+* main #interactive_area #Flute {
   width: 100%;
   margin: 0 auto;
   text-align: center;
 }
-* body main #interactive_area #Flute #flute_photo {
+* main #interactive_area #Flute #flute_photo {
   height: 60vh;
   width: 100%;
 }
-* body main #interactive_area #Flute #flute_photo circle {
+* main #interactive_area #Flute #flute_photo circle {
   fill: rgb(231, 139, 33);
-  opacity: 0.3;
+  opacity: 0.5;
   r: 30;
   cx: 495;
 }
-* body main #interactive_area #Flute #flute_photo circle:hover {
+* main #interactive_area #Flute #flute_photo circle:hover {
   fill: white;
 }
-* body main #main_message {
+* main #main_message {
   width: 50vw;
   height: 50vh;
   display: flex;
@@ -11944,35 +11950,42 @@ textarea.form-control-lg {
   justify-content: center;
   text-align: center;
 }
-@media (max-width: 800px) {
-  * body main #main_message {
+@media (max-width: 821px) {
+  * main #main_message {
     width: 100vw;
   }
 }
-* body main #main_message h1, * body main #main_message .h1 {
+* main #main_message h1, * main #main_message .h1 {
   font-size: 3.5rem;
   padding: 0 20%;
   color: white;
 }
-* body main #main_message h6, * body main #main_message .h6 {
+* main #main_message h6, * main #main_message .h6 {
   font-size: 1rem;
   color: #119aab;
   margin: 3% 0;
 }
-* body main #main_message h5, * body main #main_message .h5 {
+* main #main_message #return {
   margin: 1vh auto;
-}
-* body main #get_premium .i_hate_BS {
-  text-decoration: none;
-}
-* body main #get_premium a h5, * body main #get_premium a .h5 {
   color: white;
   background: #00de7a;
-  padding: 0.8rem;
+  padding: 0.5rem 1rem;
   border-radius: 20rem;
   text-transform: capitalize;
   font-size: 1.5rem;
   text-align: center;
+  font-weight: bold;
+}
+* main #main_message #get_premium {
+  margin: 1vh auto;
+  color: white;
+  background: #00de7a;
+  padding: 0.5rem 1rem;
+  border-radius: 20rem;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style_sass.css.map */
