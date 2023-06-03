@@ -11911,14 +11911,19 @@ body nav :visited {
 body main {
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 821px) {
+  body main {
+    flex-direction: column;
+  }
 }
 body main #interactive_area {
   margin: 0 auto;
   width: 50vw;
-  height: 50vh;
+  height: 60vh;
   display: flex;
   align-items: center;
 }
@@ -11969,17 +11974,19 @@ body main #interactive_area .feat_sausages {
   position: absolute;
   top: 11vh;
   right: 0;
-  width: 20vh;
+  width: 10vh;
   height: 60vh;
+  opacity: 1;
+  margin-right: 4vw;
 }
 body main #interactive_area .show_sausages {
   display: none;
 }
 body main #interactive_area .interactive_mag_glass {
   position: absolute;
-  top: 65vh;
+  top: 15vh;
   left: 20px;
-  opacity: 0.2;
+  opacity: 0.3;
 }
 @media screen and (width > 500px) {
   body main #sausage_fingers {
@@ -12015,7 +12022,7 @@ body main #sausage_fingers ul li .big_finger_note {
 }
 body main #main_message {
   width: 50vw;
-  height: 50vh;
+  height: 35vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12027,9 +12034,12 @@ body main #main_message {
   }
 }
 body main #main_message h1, body main #main_message .h1 {
-  font-size: 3.5rem;
-  padding: 0 20%;
+  font-size: 3rem;
   color: white;
+  margin: 0 auto;
+  width: 60%;
+  height: auto;
+  text-align: center;
 }
 body main #main_message h6, body main #main_message .h6 {
   font-size: 1rem;

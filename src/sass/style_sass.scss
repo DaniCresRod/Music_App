@@ -88,24 +88,27 @@ body {
     main {
         margin: 0 auto;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
+
+        @media (max-width: 821px){
+            flex-direction: column;
+        }
 
         #interactive_area {
             margin: 0 auto;
             width: 50vw;
-            height: 50vh;
+            height: 60vh;
             display: flex;
             align-items: center;
             
             @media (max-width: 821px){
-                width: 100vw;
+               width: 100vw;
             }
 
             #drums {
-                padding-top: 8%;
-                //width: 80%;
+                padding-top: 8%;                
 
                 #drums-photo {
                     width: 100%;
@@ -123,7 +126,7 @@ body {
                 }
             }
 
-            #Flute{             
+            #Flute{           
                 width: 100%;
                 margin:0 auto; 
                 text-align: center; 
@@ -143,31 +146,33 @@ body {
                         fill: white;
                     }
                 }
-
+                
                 @media screen and (width > 500px) {  
                     img{
                         display: none;
                     }
-                }           
+                }          
             }
 
             .feat_sausages{                    
                 position:absolute;
                 top: 11vh;
                 right: 0;
-                width: 20vh;
-                height: 60vh;                    
+                width: 10vh;
+                height: 60vh; 
+                opacity: 1;
+                margin-right: 4vw;                   
             }
 
             .show_sausages{
                 display:none;
             }
 
-            .interactive_mag_glass{
+            .interactive_mag_glass{                
                 position:absolute;
-                top: 65vh;
+                top: 15vh;
                 left: 20px;
-                opacity: 0.2;
+                opacity: 0.3;
             }
         }
 
@@ -177,7 +182,7 @@ body {
             }
         } 
 
-        #sausage_fingers{                
+        #sausage_fingers{            
             
             ul{                    
                 list-style-type: none;
@@ -214,7 +219,7 @@ body {
 
       #main_message {
         width: 50vw;
-        height: 50vh;
+        height: 35vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -222,39 +227,43 @@ body {
           
         @media (max-width: 821px){
             width: 100vw;
-        }    
+        }   
 
         h1 {
-          font-size: 3.5rem;
-          padding: 0 20%;
-          color: white;
-        }
+            font-size: 3rem;           
+            color: white;
+            margin: 0 auto;
+            width: 60%;
+            height: auto;
+            text-align: center;
+          }
 
         h6 {
           font-size: 1rem;
           color: $font-color;
           margin: 3% 0;
-        }   
 
-        @mixin button_format{
-          margin: 1vh auto;
-          color: white;
-          background: $button-colors;
-          padding: 0.5rem 1rem;
-          border-radius: 20rem;
-          text-transform: capitalize;
-          font-size: 1.5rem;
-          text-align: center;
-          font-weight: bold;
-        }
-
-        #return {
+        } @mixin button_format{
+            margin: 1vh auto;
+            color: white;
+            background: $button-colors;
+            padding: 0.5rem 1rem;
+            border-radius: 20rem;
+            text-transform: capitalize;
+            font-size: 1.5rem;
+            text-align: center;
+            font-weight: bold;
+          }
+  
+          #return {
+              @include button_format()
+          }
+  
+          #get_premium {
             @include button_format()
-        }
+          }  
 
-        #get_premium {
-          @include button_format()
-        }
+        
       }
     }
 }

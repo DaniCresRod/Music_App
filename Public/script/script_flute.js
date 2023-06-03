@@ -151,6 +151,3 @@ scaleArray.forEach((x,index)=>{
     });
   }
 });
-  
-
-
