@@ -8,140 +8,162 @@
 // Then add additional custom code here
 
 //Fuentes
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Roboto&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Roboto&display=swap");
 
 //Colores
 $base-nav-color: grey;
 $base-body-color: #0a1e21;
 $font-color: #119aab;
-$button-colors: #00De7A;
+$button-colors: #00de7a;
 
 * {
-    margin: 0 auto;
-    padding: 0;
+  margin: 0 auto;
+  padding: 0;
 
-    body {
-        background: $base-body-color;
+  body {
+    background: $base-body-color;
 
-        nav{
-            position: fixed;
-            top:0;
-            width: 97vw;
-            height: 8vh;
-            margin-bottom: 3vh;            
-        
-            background-color: $base-body-color;            
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100vw;
+      height: 8vh;
+      margin-bottom: 3vh;
 
-            ul {
-                li {
-                    display: flex;
-                    float: right;
-                }
-            }
+      background-color: $base-body-color;
+    
+      ul {
+        li {
+          display: flex;
+          float: right;
+        }
+      }
 
-            img {
-                height: 8vh;
-                padding: 1.5vh 1.5vw;
-            }
+      img {
+        height: 8vh;
+        padding: 1.5vh 1.5vw;
+      }
 
+      :link {
+        color: $font-color;
+      }
+
+      :visited {
+        color: $font-color;
+      }
+    }
             :link, :visited {
                 color: $font-color;
                 text-decoration: none;
             }
         }
 
-        main {
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+    main {
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 90vh;
+      width: 100vw;
 
-            #interactive_area {
-                margin: 0 auto;
+        @media (max-width: 800px){
+          display: flex;
+          flex-direction: column;
+          height: 90vh;
+          width: 100vw;
 
-                #drums {
-                    width: 100%;
+        }
+    
 
-                    #drums-photo {
-                        width: 100%;
-                        height: 60vh;
-                        .playing {
-                            transform: scale(1.01);
-                            box-shadow: 0 0 1rem #ffc600;
-                        }
-
-                        circle {
-                            fill: grey;
-                            opacity: 0.4;
-                        }
-                    }
-                }
-
-                #Flute{              
-                    width: 100%;
-                    margin:0 auto; 
-                    text-align: center; 
-                    
-                    #flute_photo{
-                        height: 60vh;
-                        width:100%;
-        
-                        circle{
-                            fill:rgb(231, 139, 33);
-                            opacity: 0.3;
-                            r: 30;
-                            cx:495;
-                        }
-        
-                        circle:hover{
-                            fill: white;
-                        }
-                    }            
-                }
-            }
-
-            #main_message {
-                margin-top: 2vh;
-                color: white;
-                font-family: 'Roboto', sans-serif;
-                text-align: center;
-                width: 80vw;
-
-                h1 {
-                    font-size: 2.5rem;
-                }
-
-                h6 {
-                    font-size: 0.8rem;
-                    color: $font-color;
-                }
-            }
-
-            #get_premium {
-                margin: 1vh auto;  
-                
-                .i_hate_BS{
-                    text-decoration: none;
-                }
-
-                a{
-                    h5 {
-                        color: white;
-                        background: $button-colors;
-                        padding: 0.5vh 6vw;
-                        border-radius: 20px;
-                        text-transform: capitalize;
-                        font-size: 1rem;
-                    }
-                }
-            }
+      #interactive_area {
+        margin: 0 auto;
+        width: 50vw;
+        height: 50vh;
+        display: flex;
+        align-items: center;
+          
+        @media (max-width: 800px){
+          width: 100vw;
         }
 
-        footer {
-            max-height: 15vh;
+
+
+        #drums {
+          padding-top: 8%;
+            width: 80%;
+
+          #drums-photo {
+            
+            .playing {
+              transform: scale(1.01);
+              box-shadow: 0 0 1rem #ffc600;
+            }
+
+            circle {
+              fill: grey;
+              opacity: 0.4;
+            }
+          }
         }
 
+        #Flute {
+          width: 100%;
+          margin: 0 auto;
+          text-align: center;
+
+          #flute_photo {
+            height: 60vh;
+            width: 100%;
+
+            circle {
+              fill: rgb(231, 139, 33);
+              opacity: 0.5;
+              r: 30;
+              cx: 495;
+            }
+
+            circle:hover {
+              fill: white;
+            }
+          }
+        }
+      }
+
+      #main_message {
+        width: 50vw;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+          @media (max-width: 800px){
+            width: 100vw;
+          }
+    
+
+        h1 {
+          font-size: 3.5rem;
+          padding: 0 20%;
+          color: white;
+        }
+
+        h6 {
+          font-size: 1rem;
+          color: $font-color;
+          margin: 3% 0;
+        }
+
+        h5 {
+            margin: 1vh auto;
+            color: white;
+            background: $button-colors;
+            padding: 0.8rem;
+            border-radius: 20rem;
+            text-transform: capitalize;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+      }
     }
+  }
 }
