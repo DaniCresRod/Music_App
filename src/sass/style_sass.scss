@@ -108,12 +108,14 @@ $button-colors: #00de7a;
           padding-top: 8%;
             width: 80%;
 
-          #drums-photo {
-            
-            .playing {
-              transform: scale(1.01);
-              box-shadow: 0 0 1rem #ffc600;
-            }
+                    #drums-photo {
+                        width: 100%;
+                        height: 60vh;
+                        
+                        .playing {
+                            transform: scale(1.01);
+                            box-shadow: 0 0 1rem #ffc600;
+                        }
 
             circle {
               fill: grey;
@@ -122,28 +124,52 @@ $button-colors: #00de7a;
           }
         }
 
-        #Flute {
-          width: 100%;
-          margin: 0 auto;
-          text-align: center;
+                #Flute{             
+                    width: 100%;
+                    margin:0 auto; 
+                    text-align: center; 
+                    
+                    #flute_photo{
+                        height: 60vh;
+                        width:100%;
+        
+                        circle{
+                            fill:rgb(231, 139, 33);
+                            opacity: 0.3;
+                            r: 30;
+                            cx:495;
+                        }
+        
+                        circle:hover{
+                            fill: white;
+                        }
+                    } 
+                    @media screen and (width > 500px) {  
+                        img{
+                            display: none;
+                        }
+                    }           
+                }
 
-          #flute_photo {
-            height: 60vh;
-            width: 100%;
+                .feat_sausages{                    
+                    position:absolute;
+                    top: 11vh;
+                    right: 0;
+                    width: 20vh;
+                    height: 60vh;                    
+                }
 
-            circle {
-              fill: rgb(231, 139, 33);
-              opacity: 0.5;
-              r: 30;
-              cx: 495;
+                .show_sausages{
+                    display:none;
+                }
+
+                .interactive_mag_glass{
+                    position:absolute;
+                    top: 65vh;
+                    left: 20px;
+                    opacity: 0.2;
+                }
             }
-
-            circle:hover {
-              fill: white;
-            }
-          }
-        }
-      }
 
       #main_message {
         width: 50vw;
@@ -169,6 +195,70 @@ $button-colors: #00de7a;
           margin: 3% 0;
         }
 
+            #get_premium {
+                margin: 1vh auto;  
+                
+                .i_hate_BS{
+                    text-decoration: none;
+                }
+
+                a{
+                    h5 {
+                        color: white;
+                        background: $button-colors;
+                        padding: 0.5vh 6vw;
+                        border-radius: 20px;
+                        text-transform: capitalize;
+                        font-size: 1rem;
+                    }
+                }
+            }
+
+            @media screen and (width > 500px) {  
+                #sausage_fingers{
+                    display: none;
+                }
+            } 
+
+            #sausage_fingers{                
+                
+                ul{                    
+                    list-style-type: none;
+                    width: 100%;
+                    height: 100%;
+                    list-style-position: inside;
+                    padding:0;
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+
+                    li{
+                        width: 100%;                        
+                        height: 7vh;
+                        background: $button-colors;                            
+                        border-radius: 15px;
+                        justify-content: center;
+                        display: flex;
+                        align-items: center;
+
+                        .big_finger_note{  
+
+                            text-align: center;
+                            color: white;
+                            font-weight: bold;
+                            margin: 0 auto; 
+                            padding: auto auto;
+                            font-size: larger;
+                                          
+        
+                        }
+                    }
+                    
+                }
+
+                
+            }
         @mixin button_format{
           margin: 1vh auto;
           color: white;

@@ -11992,8 +11992,33 @@ textarea.form-control-lg {
 * main #interactive_area #Flute #flute_photo circle:hover {
   fill: white;
 }
+<<<<<<< HEAD
 * main #main_message {
 <<<<<<< HEAD
+=======
+@media screen and (width > 500px) {
+  * body main #interactive_area #Flute img {
+    display: none;
+  }
+}
+* body main #interactive_area .feat_sausages {
+  position: absolute;
+  top: 11vh;
+  right: 0;
+  width: 20vh;
+  height: 60vh;
+}
+* body main #interactive_area .show_sausages {
+  display: none;
+}
+* body main #interactive_area .interactive_mag_glass {
+  position: absolute;
+  top: 65vh;
+  left: 20px;
+  opacity: 0.2;
+}
+* body main #main_message {
+>>>>>>> feature_sausage_fingers
   margin-top: 2vh;
   color: white;
   font-family: "Roboto", sans-serif;
@@ -12031,7 +12056,43 @@ textarea.form-control-lg {
   color: white;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 * footer {
+=======
+@media screen and (width > 500px) {
+  * body main #sausage_fingers {
+    display: none;
+  }
+}
+* body main #sausage_fingers ul {
+  list-style-type: none;
+  width: 100%;
+  height: 100%;
+  list-style-position: inside;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+* body main #sausage_fingers ul li {
+  width: 100%;
+  height: 7vh;
+  background: #00De7A;
+  border-radius: 15px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+* body main #sausage_fingers ul li .big_finger_note {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: auto auto;
+  font-size: larger;
+}
+* body footer {
+>>>>>>> feature_sausage_fingers
   max-height: 15vh;
 =======
 * main #main_message h6, * main #main_message .h6 {
