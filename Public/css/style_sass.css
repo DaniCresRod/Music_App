@@ -11855,10 +11855,15 @@ textarea.form-control-lg {
   margin: 0 auto;
   padding: 0;
 }
-* body {
+
+body {
   background: #0a1e21;
 }
+<<<<<<< HEAD
 * body nav {
+=======
+body nav {
+>>>>>>> 5f65e267a1f2d7919b196246eaf0e98292555c51
   position: fixed;
   top: 0;
   width: 100vw;
@@ -11867,7 +11872,11 @@ textarea.form-control-lg {
   background-color: #0a1e21;
 }
 @media (max-width: 768px) {
+<<<<<<< HEAD
   * body nav .navbar-collapse {
+=======
+  body nav .navbar-collapse {
+>>>>>>> 5f65e267a1f2d7919b196246eaf0e98292555c51
     position: absolute;
     top: 100%;
     background: linear-gradient(#10292c, #307078);
@@ -11878,21 +11887,34 @@ textarea.form-control-lg {
     padding-left: 100px;
     padding-right: 100px;
   }
+<<<<<<< HEAD
   * body nav .navbar-nav {
+=======
+  body nav .navbar-nav {
+>>>>>>> 5f65e267a1f2d7919b196246eaf0e98292555c51
     display: flex;
     flex-direction: column;
     align-items: flex-end;
   }
+<<<<<<< HEAD
   * body nav .navbar-nav .nav-item {
     margin-bottom: 10px;
   }
 }
 * body nav .navbar-toggler-icon {
+=======
+  body nav .navbar-nav .nav-item {
+    margin-bottom: 10px;
+  }
+}
+body nav .navbar-toggler-icon {
+>>>>>>> 5f65e267a1f2d7919b196246eaf0e98292555c51
   background-color: #00De7A;
   border-radius: 5px;
   width: 40px;
   height: 35px;
 }
+<<<<<<< HEAD
 * body nav ul li {
   display: flex;
   justify-self: right;
@@ -11915,13 +11937,43 @@ textarea.form-control-lg {
   justify-content: center;
 }
 * body main #interactive_area {
+=======
+body nav ul li {
+  display: flex;
+  justify-self: right;
+}
+body nav img {
+  height: 8vh;
+  padding: 1.5vh 1.5vw;
+}
+body nav :link {
+  color: white;
+}
+body nav :visited {
+  color: white;
+}
+body main {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 821px) {
+  body main {
+    flex-direction: column;
+  }
+}
+body main #interactive_area {
+>>>>>>> 5f65e267a1f2d7919b196246eaf0e98292555c51
   margin: 0 auto;
   width: 50vw;
-  height: 50vh;
+  height: 60vh;
   display: flex;
   align-items: center;
 }
 @media (max-width: 821px) {
+<<<<<<< HEAD
   * body main #interactive_area {
     width: 100vw;
   }
@@ -11939,32 +11991,125 @@ textarea.form-control-lg {
   opacity: 0.4;
 }
 * body main #interactive_area #Flute {
+=======
+  body main #interactive_area {
+    width: 100vw;
+  }
+}
+body main #interactive_area #drums {
+  padding-top: 8%;
+}
+body main #interactive_area #drums #drums-photo {
+  width: 100%;
+  height: 60vh;
+}
+body main #interactive_area #drums #drums-photo .playing {
+  transform: scale(1.01);
+  box-shadow: 0 0 1rem #ffc600;
+}
+body main #interactive_area #drums #drums-photo circle {
+  fill: grey;
+  opacity: 0.4;
+}
+body main #interactive_area #Flute {
+>>>>>>> 5f65e267a1f2d7919b196246eaf0e98292555c51
   width: 100%;
   margin: 0 auto;
   text-align: center;
 }
+<<<<<<< HEAD
 * body main #interactive_area #Flute #flute_photo {
   height: 60vh;
   width: 100%;
 }
 * body main #interactive_area #Flute #flute_photo circle {
+=======
+body main #interactive_area #Flute #flute_photo {
+  height: 60vh;
+  width: 100%;
+}
+body main #interactive_area #Flute #flute_photo circle {
+>>>>>>> 5f65e267a1f2d7919b196246eaf0e98292555c51
   fill: rgb(231, 139, 33);
-  opacity: 0.5;
+  opacity: 0.3;
   r: 30;
   cx: 495;
 }
+<<<<<<< HEAD
 * body main #interactive_area #Flute #flute_photo circle:hover {
   fill: white;
 }
 * body main #main_message {
+=======
+body main #interactive_area #Flute #flute_photo circle:hover {
+  fill: white;
+}
+@media screen and (width > 500px) {
+  body main #interactive_area #Flute img {
+    display: none;
+  }
+}
+body main #interactive_area .feat_sausages {
+  position: absolute;
+  top: 11vh;
+  right: 0;
+  width: 10vh;
+  height: 60vh;
+  opacity: 1;
+  margin-right: 4vw;
+}
+body main #interactive_area .show_sausages {
+  display: none;
+}
+body main #interactive_area .interactive_mag_glass {
+  position: absolute;
+  top: 15vh;
+  left: 20px;
+  opacity: 0.3;
+}
+@media screen and (width > 500px) {
+  body main #sausage_fingers {
+    display: none;
+  }
+}
+body main #sausage_fingers ul {
+  list-style-type: none;
+  width: 100%;
+  height: 100%;
+  list-style-position: inside;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+body main #sausage_fingers ul li {
+  width: 100%;
+  height: 7vh;
+  background: #00de7a;
+  border-radius: 15px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+body main #sausage_fingers ul li .big_finger_note {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: auto auto;
+  font-size: larger;
+}
+body main #main_message {
+>>>>>>> 5f65e267a1f2d7919b196246eaf0e98292555c51
   width: 50vw;
-  height: 50vh;
+  height: 35vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
 }
 @media (max-width: 821px) {
+<<<<<<< HEAD
   * body main #main_message {
     width: 100vw;
   }
@@ -11972,14 +12117,34 @@ textarea.form-control-lg {
 * body main #main_message h1, * body main #main_message .h1 {
   font-size: 3.5rem;
   padding: 0 20%;
-  color: white;
+=======
+  body main #main_message {
+    width: 100vw;
+  }
 }
+body main #main_message h1, body main #main_message .h1 {
+  font-size: 3rem;
+>>>>>>> 5f65e267a1f2d7919b196246eaf0e98292555c51
+  color: white;
+  margin: 0 auto;
+  width: 60%;
+  height: auto;
+  text-align: center;
+}
+<<<<<<< HEAD
 * body main #main_message h6, * body main #main_message .h6 {
+=======
+body main #main_message h6, body main #main_message .h6 {
+>>>>>>> 5f65e267a1f2d7919b196246eaf0e98292555c51
   font-size: 1rem;
   color: #119aab;
   margin: 3% 0;
 }
+<<<<<<< HEAD
 * body main #main_message #return {
+=======
+body main #main_message #return {
+>>>>>>> 5f65e267a1f2d7919b196246eaf0e98292555c51
   margin: 1vh auto;
   color: white;
   background: #00de7a;
@@ -11989,8 +12154,13 @@ textarea.form-control-lg {
   font-size: 1.5rem;
   text-align: center;
   font-weight: bold;
+  text-decoration: none;
 }
+<<<<<<< HEAD
 * body main #main_message #get_premium {
+=======
+body main #main_message #get_premium {
+>>>>>>> 5f65e267a1f2d7919b196246eaf0e98292555c51
   margin: 1vh auto;
   color: white;
   background: #00de7a;
@@ -12000,6 +12170,10 @@ textarea.form-control-lg {
   font-size: 1.5rem;
   text-align: center;
   font-weight: bold;
+<<<<<<< HEAD
+=======
+  text-decoration: none;
+>>>>>>> 5f65e267a1f2d7919b196246eaf0e98292555c51
 }
 
 /*# sourceMappingURL=style_sass.css.map */
