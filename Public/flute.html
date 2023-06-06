@@ -1,133 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style_sass.css">
-    <link rel="stylesheet" href="css/style_main.css">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="Resources/Images/favicon.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style_sass.css" />
+    <link rel="stylesheet" href="css/style_main.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="shortcut icon"
+      href="Resources/Images/favicon.png"
+      type="image/x-icon"
+    />
     <title>DOMBOOM | Music for everyone</title>
-</head>
-<body>
-    <nav class="navbar navbar-expand-sm navbar-#119aab bg-#119aab border-bottom border-info">
-        <div class="logo_music_app">
-            <img id="logoMusicApp" src="Resources/Images/logo_music_app.png" alt="logo_music_app">
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-sm navbar-#119aab bg-#119aab border-bottom border-info"
+    >
+      <div class="logo_music_app">
+        <img
+          id="logoMusicApp"
+          src="Resources/Images/logo_music_app.png"
+          alt="logo_music_app"
+        />
+      </div>
+      <button
+        class="navbar-toggler m-0"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#options"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="options">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Free</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#return">Help</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="signup.html">Sign Up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <section id="interactive_area">
+        <div id="Flute">
+          <svg
+            id="flute_photo"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 1000 1000"
+          >
+            <image
+              width="1000"
+              xlink:href="Resources/Images/flauta.png"
+            ></image>
+
+            <a xlink:href="">
+              <text
+                x="477"
+                y="463"
+                fill="white"
+                font-size="32"
+                font-weight="bold"
+              >
+                SI
+              </text>
+              <circle cy="450"></circle>
+            </a>
+            <a xlink:href="">
+              <text
+                x="475"
+                y="525"
+                fill="white"
+                font-size="32"
+                font-weight="bold"
+              >
+                LA
+              </text>
+              <circle cy="515"></circle>
+            </a>
+            <a xlink:href="">
+              <text
+                x="466"
+                y="596"
+                fill="white"
+                font-size="32"
+                font-weight="bold"
+              >
+                SOL
+              </text>
+              <circle cy="585"></circle>
+            </a>
+            <a xlink:href="">
+              <text
+                x="475"
+                y="660"
+                fill="white"
+                font-size="32"
+                font-weight="bold"
+              >
+                FA
+              </text>
+              <circle cy="650"></circle>
+            </a>
+            <a xlink:href="">
+              <text
+                x="475"
+                y="725"
+                fill="white"
+                font-size="32"
+                font-weight="bold"
+              >
+                MI
+              </text>
+              <circle cy="715"></circle>
+            </a>
+            <a xlink:href="">
+              <text
+                x="475"
+                y="785"
+                fill="white"
+                font-size="32"
+                font-weight="bold"
+              >
+                RE
+              </text>
+              <circle cy="775"></circle>
+            </a>
+            <a xlink:href="">
+              <text
+                x="470"
+                y="850"
+                fill="white"
+                font-size="32"
+                font-weight="bold"
+              >
+                DO
+              </text>
+              <circle cy="840"></circle>
+            </a>
+          </svg>
+          <img
+            src="Resources/Images/lupa_flute.png"
+            class="interactive_mag_glass"
+          />
         </div>
-        <button class="navbar-toggler m-0" type="button" data-bs-toggle="collapse" data-bs-target="#options">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="options">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">Free</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#return">Help</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="signup.html">Sign Up</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="login.html">Login</a>
-            </li>
-            </ul>
+        <div id="sausage_fingers" class="feat_sausages show_sausages">
+          <ul></ul>
         </div>
-    </nav>     
+      </section>
 
-    <main>       
-        <section id="interactive_area">
-            <div id="Flute">                
-                <svg id="flute_photo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 1000">
-                    
-                    <image width="1000" xlink:href="Resources/Images/flauta.png"></image>                               
-
-                    <a xlink:href=""><text x="477" y="463" fill="white" font-size="32" font-weight="bold">SI</text>
-                        <circle cy="450"></circle>
-                    </a>
-                    <a xlink:href=""><text x="475" y="525" fill="white" font-size="32" font-weight="bold">LA</text>
-                        <circle cy="515"></circle>
-                    </a>
-                    <a xlink:href=""><text x="466" y="596" fill="white" font-size="32" font-weight="bold">SOL</text>
-                        <circle cy="585"></circle>
-                    </a>
-                    <a xlink:href=""><text x="475" y="660" fill="white" font-size="32" font-weight="bold">FA</text>
-                        <circle cy="650"></circle>
-                    </a>
-                    <a xlink:href=""><text x="475" y="725" fill="white" font-size="32" font-weight="bold">MI</text>
-                        <circle cy="715"></circle>
-                    </a>
-                    <a xlink:href=""><text x="475" y="785" fill="white" font-size="32" font-weight="bold">RE</text>
-                        <circle cy="775"></circle>
-                    </a>
-                    <a xlink:href=""><text x="470" y="850" fill="white" font-size="32" font-weight="bold">DO</text>
-                        <circle cy="840"></circle>
-                    </a>
-                </svg>
-                <img src="Resources/Images/lupa_flute.png" class="interactive_mag_glass">
-            </div>
-            <div id="sausage_fingers" class="feat_sausages show_sausages">
-                <ul></ul>
-            </div>
-
-        </section>
-    </section>
-    <section id="main_message">
+      <section id="main_message">
         <h1>Music for everyone</h1>
         <h6>Millions of songs. No credit card needed.</h6>
         <a href="index.html" id="return">Return to free</a>
-    </section>
-    </main>   
-    
-    <footer class="container-fluid text-center" >
-        <div class="row p-5 bg-black text-white  pb-2">
-            <div class="col-xs-12 col-sm-9 col-md-6 col-lg-3">
-                <img src="Resources/Images/logo_music_app.png" class="img-fluid align-items-center mb-4" alt="">
-            </div>
-            <div class="col-xs-12 col-sm-9 col-md-6 col-lg-3 pb-3">
-                <p class="h5 mb-3">Need Help?</p>
-                <div class="mb-1">
-                    <a class="text-secondary text-decoration-none" href="#">FAQs</a>
-                </div>
-                <div class="mb-1">
-                    <a class="text-secondary text-decoration-none" href="#">Legal</a>
-                </div>
-                <div class="mb-1">
-                    <a class="text-secondary text-decoration-none" href="#">Useful links</a>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-9 col-md-6 col-lg-3 pb-3">
-                <p class="h5 mb-3">Contact Us</p>
-                <div class="mb-1">
-                    <a class="text-secondary text-decoration-none" href="#">627666881</a>
-                </div>
-                <div class="mb-1">
-                    <a class="text-secondary text-decoration-none" href="#">contact@domboom.com</a>
-                </div>
-                <div class="mb-1">
-                    <a class="text-secondary text-decoration-none" href="#">C. Casimiro Velasco, 14, 33201 Gijón, Asturias</a>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-9 col-md-6 col-lg-3 pb-3">
-                <p class="h5 mb-3">Social Media</p>
-                <div class="mb-1">
-                    <a class="text-secondary text-decoration-none" href="https://www.instagram.com/">Instagram</a>
-                </div>
-                <div class="mb-1">
-                    <a class="text-secondary text-decoration-none" href="https://es-es.facebook.com/">Facebook</a>
-                </div>
-                <div class="mb-1">
-                    <a class="text-secondary text-decoration-none" href="https://twitter.com/">Twitter</a>
-                </div> 
-            </div>
-            <div>
-                <p class="text-secondary text-center">Copyright - All rights reserved © 2023</p>
-            </div>
+      </section>
+    </main>
+
+    <footer class="container-fluid text-center">
+      <div class="row p-5 bg-black text-white pb-2">
+        <div class="col-xs-12 col-sm-9 col-md-6 col-lg-3">
+          <img
+            src="Resources/Images/logo_music_app.png"
+            class="img-fluid align-items-center mb-4"
+            alt=""
+          />
         </div>
+        <div class="col-xs-12 col-sm-9 col-md-6 col-lg-3 pb-3">
+          <p class="h5 mb-3">Need Help?</p>
+          <div class="mb-1">
+            <a class="text-secondary text-decoration-none" href="#">FAQs</a>
+          </div>
+          <div class="mb-1">
+            <a class="text-secondary text-decoration-none" href="#">Legal</a>
+          </div>
+          <div class="mb-1">
+            <a class="text-secondary text-decoration-none" href="#"
+              >Useful links</a
+            >
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-9 col-md-6 col-lg-3 pb-3">
+          <p class="h5 mb-3">Contact Us</p>
+          <div class="mb-1">
+            <a class="text-secondary text-decoration-none" href="#"
+              >627666881</a
+            >
+          </div>
+          <div class="mb-1">
+            <a class="text-secondary text-decoration-none" href="#"
+              >contact@domboom.com</a
+            >
+          </div>
+          <div class="mb-1">
+            <a class="text-secondary text-decoration-none" href="#"
+              >C. Casimiro Velasco, 14, 33201 Gijón, Asturias</a
+            >
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-9 col-md-6 col-lg-3 pb-3">
+          <p class="h5 mb-3">Social Media</p>
+          <div class="mb-1">
+            <a
+              class="text-secondary text-decoration-none"
+              href="https://www.instagram.com/"
+              >Instagram</a
+            >
+          </div>
+          <div class="mb-1">
+            <a
+              class="text-secondary text-decoration-none"
+              href="https://es-es.facebook.com/"
+              >Facebook</a
+            >
+          </div>
+          <div class="mb-1">
+            <a
+              class="text-secondary text-decoration-none"
+              href="https://twitter.com/"
+              >Twitter</a
+            >
+          </div>
+        </div>
+        <div>
+          <p class="text-secondary text-center">
+            Copyright - All rights reserved © 2023
+          </p>
+        </div>
+      </div>
     </footer>
 
     <script src="script/script_flute.js"></script>
-</body>
+  </body>
 </html>
