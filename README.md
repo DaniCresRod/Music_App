@@ -1,8 +1,8 @@
 # Music_App
 
 Functional web page with 2 instruments:
-- battery (Free)
-- flute (Premium)
+- Battery (Free)
+- Flute (Premium)
 Focus on UX and responsive. 
 
 Intrument 1: Battery
