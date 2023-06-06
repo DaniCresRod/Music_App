@@ -12056,6 +12056,7 @@ body main #main_message #return {
   font-size: 1.5rem;
   text-align: center;
   font-weight: bold;
+  text-decoration: none;
 }
 body main #main_message #get_premium {
   margin: 1vh auto;
@@ -12067,6 +12068,7 @@ body main #main_message #get_premium {
   font-size: 1.5rem;
   text-align: center;
   font-weight: bold;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style_sass.css.map */
